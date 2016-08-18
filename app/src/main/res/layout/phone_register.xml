@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/user_center_bg"
+    >
+    <include layout="@layout/topbar"
+        android:id="@+id/topbar"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/register_use_phone_hint"
+        android:singleLine="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/et_phonenum"
+        android:background="@drawable/edit_back"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_below="@id/topbar"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:textColorHint="@color/register_hint"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:text="@string/register_button"
+        android:id="@+id/button_phone_reg"
+        android:layout_below="@+id/et_phonenum"
+        android:layout_marginTop="20dp"
+        style="@style/login_button_style"
+        />
+
+</RelativeLayout>
+

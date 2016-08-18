@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:android_custom="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/line1_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/diver_line"
+        />
+
+    <TextView
+        android:id="@+id/payment_user_wechat"
+        style="@style/payment_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line1_wechat"
+        android:layout_marginLeft="@dimen/payment_item_margin_one"
+        android:layout_marginRight="@dimen/payment_margin_one"
+        android:text="@string/payment_user_txt"
+        />
+
+    <TextView
+        android:id="@+id/user_wechat"
+        style="@style/payment_item_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/payment_user_wechat"
+        android:layout_marginLeft="@dimen/payment_item_margin_three"
+        android:layout_toRightOf="@id/payment_user_wechat"
+        android:text="@string/payment_user_txt"
+        />
+
+    <TextView
+        android:id="@+id/payment_amount_wechat"
+        style="@style/payment_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/payment_user_wechat"
+        android:layout_below="@id/payment_user_wechat"
+        android:text="@string/payment_amount_txt"
+        />
+
+    <com.sanqiwan.reader.view.GridLayout
+        android:id="@+id/alipay_layout_wechat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/payment_amount_wechat"
+        android:layout_marginLeft="@dimen/payment_margin_one"
+        android:layout_marginRight="@dimen/payment_margin_one"
+        android:layout_marginTop="@dimen/payment_item_margin_four"
+        android_custom:columns="3"
+        >
+
+        <TextView
+            android:id="@+id/ten_wechat"
+            style="@style/payment_item_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/payment_item_height"
+            android:text="@string/ten_txt"
+            />
+
+        <TextView
+            android:id="@+id/thirty_wechat"
+            style="@style/payment_item_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/payment_item_height"
+            android:text="@string/thirty_txt"
+            />
+
+        <TextView
+            android:id="@+id/fifty_wechat"
+            style="@style/payment_item_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/payment_item_height"
+            android:text="@string/fifty_txt"
+            />
+
+        <TextView
+            android:id="@+id/hundred_wechat"
+            style="@style/payment_item_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/payment_item_height"
+            android:text="@string/hundred_txt"
+            android:textColor="@color/gv_item_color"
+            />
+
+        <TextView
+            android:id="@+id/three_hundred_wechat"
+            style="@style/payment_item_button"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/payment_item_height"
+            android:text="@string/three_hundred_txt"
+            android:textColor="@color/gv_item_color"
+            />
+    </com.sanqiwan.reader.view.GridLayout>
+
+    <TextView
+        android:id="@+id/conversion_ratio_wechat"
+        style="@style/payment_explain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/payment_user_wechat"
+        android:layout_below="@id/alipay_layout_wechat"
+        />
+</RelativeLayout>

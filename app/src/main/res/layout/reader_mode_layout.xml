@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/reader_bottom_bg"
+    android:orientation="vertical"
+    android:layout_gravity="bottom">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reader_menu_row_height"
+        android:layout_marginBottom="1px"
+        android:layout_gravity="left|center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="@string/progress"
+            android:id="@+id/textView"
+            android:gravity="center"
+            android:textColor="@color/reader_menu_title_color"
+            android:paddingLeft="10dp"
+            android:layout_marginRight="1px"
+            android:paddingRight="10dp"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/reader_menu_divider_color"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/reader_progress"
+            android:padding="10dp"
+            android:thumb="@drawable/reader_brightness_thumb"
+            android:progressDrawable="@drawable/seek_bar"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/reader_menu_divider_color"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reader_menu_row_height"
+        android:id="@+id/linearLayout"
+        android:baselineAligned="false">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="1px"
+            android:id="@+id/previous_chapter">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/prev_chapter"
+                android:layout_gravity="center"
+                android:drawablePadding="5dp"
+                android:drawableLeft="@drawable/prev_chapter_bg"
+                android:gravity="center"
+                android:textColor="@color/reader_menu_title_color"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/reader_menu_divider_color"/>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/next_chapter">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/next_chapter"
+                android:layout_gravity="center"
+                android:drawableRight="@drawable/next_chapter_bg"
+                android:gravity="center"
+                android:drawablePadding="5dp"
+                android:textColor="@color/reader_menu_title_color"/>
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

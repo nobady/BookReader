@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="indicator_right_padding">10dp</dimen>
+    <dimen name="indicator_corner_radius">12dp</dimen>
+    <dimen name="indicator_internal_padding">4dp</dimen>
+    <dimen name="header_footer_left_right_padding">24dp</dimen>
+    <dimen name="header_footer_top_bottom_padding">20dp</dimen>
+    <dimen name="comment_margin_left">10dp</dimen>
+    <dimen name="icon_size">66dp</dimen>
+    <dimen name="game_list_title">16sp</dimen>
+    <dimen name="game_list_more_info_size">12sp</dimen>
+
+    <dimen name="search_recommend_key_size_one">12sp</dimen>
+    <dimen name="search_recommend_key_size_two">14sp</dimen>
+    <dimen name="search_recommend_key_size_three">15sp</dimen>
+    <dimen name="search_recommend_key_size_four">17sp</dimen>
+    <dimen name="search_recommend_key_size_five">19sp</dimen>
+    <dimen name="search_recommend_radius_size_one">30dp</dimen>
+    <dimen name="search_recommend_radius_size_two">34dp</dimen>
+    <dimen name="search_recommend_radius_size_three">38dp</dimen>
+    <dimen name="search_recommend_radius_size_four">41dp</dimen>
+    <dimen name="search_recommend_radius_size_five">46dp</dimen>
+    <dimen name="search_recommend_margin_left">15dp</dimen>
+    <dimen name="search_recommend_column_margin">5dp</dimen>
+    <dimen name="search_recommend_margin_top">25dp</dimen>
+    <dimen name="search_recommend_margin_bottom">25dp</dimen>
+    <dimen name="search_recommend_row_margin">5dp</dimen>
+    <dimen name="default_size">8sp</dimen>
+    <dimen name="reader_menu_row_height">45dp</dimen>
+</resources>

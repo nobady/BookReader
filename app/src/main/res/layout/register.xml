@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/user_center_bg"
+    >
+    <include layout="@layout/topbar"
+        android:id="@+id/topbar"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:id="@+id/et_phone"
+        android:editable="false"
+        android:layout_below="@id/topbar"
+        style="@style/user_register_edit_style"
+        android:layout_gravity="center"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/register_password_hint"
+        android:singleLine="true"
+        android:id="@+id/et_password"
+        android:layout_below="@id/et_phone"
+        style="@style/user_register_edit_style"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:text="@string/register_button"
+        android:id="@+id/button_phone_reg_confirm"
+        android:layout_below="@+id/et_password"
+        android:layout_marginTop="20dp"
+        style="@style/login_button_style"
+        />
+
+</RelativeLayout>
+

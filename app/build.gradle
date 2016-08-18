@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.sanqiwan.reader"
+        minSdkVersion 9
+        targetSdkVersion 22
+
+        ndk {
+            moduleName "DeflatingDecompressor-v3"
+        }
+
+        testApplicationId "com.sanqiwan.reader.tests"
+        testInstrumentationRunner "android.test.InstrumentationTestRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-v4:22.0.0'
+    compile files('libs/alipay_msp.jar')
+    compile files('libs/alipaysdk.jar')
+    compile files('libs/alipaysecsdk.jar')
+    compile files('libs/alipayutdid.jar')
+    compile files('libs/umeng_sdk.jar')
+    compile files('libs/commons-codec-1.6.jar')
+    compile files('libs/commons-logging-1.1.1.jar')
+    compile files('libs/fluent-hc-4.2.5.jar')
+    compile files('libs/httpclient-4.2.5.jar')
+    compile files('libs/httpclient-cache-4.2.5.jar')
+    compile files('libs/httpcore-4.2.4.jar')
+    compile files('libs/httpmime-4.2.5.jar')
+}

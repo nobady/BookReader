@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/recommend_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/top_content_bg"
+        android:visibility="gone"
+        >
+        <com.sanqiwan.reader.webimageview.WebImageView
+            android:id="@+id/head_picture_left"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            />
+        <com.sanqiwan.reader.webimageview.WebImageView
+            android:id="@+id/head_picture_right"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            />
+        </LinearLayout>
+
+    <TextView
+        android:id="@+id/today_recommend_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/today_recommend_icon"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/book_name_detail"
+        android:visibility="gone"
+        android:text="@string/today_recommend"
+        android:background="@drawable/today_recommend_bg"
+        />
+    <com.sanqiwan.reader.view.TodayRecommendView
+        android:id="@+id/today_recommend"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@+id/hot_read_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/hot_read_icon"
+        android:background="@drawable/hot_read_bg"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="10dp"
+        android:drawablePadding="5dp"
+        android:textSize="18sp"
+        android:textColor="@color/book_name_detail"
+        android:text="@string/hot_read"
+        android:visibility="gone"
+        />
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cover_height">100dp</dimen>
+    <dimen name="cover_width">80dp</dimen>
+    <dimen name="gallery_pic_height">106dp</dimen>
+    <dimen name="gallery_pic_width">70dp</dimen>
+    <dimen name="avatar_margin_top">-20dp</dimen>
+    <dimen name="user_panel_margin_top">25dp</dimen>
+    <dimen name="user_name_text_size">20sp</dimen>
+    <dimen name="user_center_title_text_size">22sp</dimen>
+    <dimen name="user_center_name_margin_top">30dp</dimen>
+    <dimen name="exit_text_size">16dp</dimen>
+    <dimen name="money_title_text_size">12dp</dimen>
+    <item type="id" name="book_id"></item>
+    <integer name="cover_name_size">14</integer>
+    <integer name="cover_height">264</integer>
+    <integer name="cover_width">185</integer>
+    <dimen name="recent_read_title_size">12sp</dimen>
+    <dimen name="tab_height">44dp</dimen>
+    <dimen name="tab_bg_height">48dp</dimen>
+    <dimen name="tab_text_height">43dp</dimen>
+    <dimen name="tab_text_size">18sp</dimen>
+
+    <!--login_ui-->
+    <dimen name="default_login_icon_size">50dp</dimen>
+    <dimen name="login_title_text_size">16sp</dimen>
+    <dimen name="login_button_text_size">18sp</dimen>
+    <dimen name="login_register_text_size">13sp</dimen>
+    <dimen name="login_pannel_padding_bottom">12dp</dimen>
+    <dimen name="login_setting_text_size">20sp</dimen>
+    <dimen name="login_edit_margin_top">12dp</dimen>
+    <dimen name="login_register_margin_top">8dp</dimen>
+    <dimen name="login_button_margin_top">10dp</dimen>
+
+    <dimen name="setting_text_size">16sp</dimen>
+    <!--book_detail-->
+    <dimen name="detail_book_name">18sp</dimen>
+    <dimen name="detail_author">16sp</dimen>
+
+    <dimen name="register_text_size">17sp</dimen>
+    <dimen name="register_edit_padding">7dp</dimen>
+    <dimen name="register_margin_top">12dp</dimen>
+    <dimen name="retrieve_phone_tip">16sp</dimen>
+
+    <dimen name="volume_item">40dp</dimen>
+    <dimen name="volume_item_size">14sp</dimen>
+    <dimen name="all_volume_margin">4dp</dimen>
+    <dimen name="user_image_width">40dp</dimen>
+    <dimen name="user_image_height">40dp</dimen>
+    <dimen name="detail_tab_height">39dp</dimen>
+
+    <dimen name="read_progress_tip_text_size">10sp</dimen>
+    <dimen name="recommend_more_margin_bottom">10dp</dimen>
+    <dimen name="recommend_item_height">75dp</dimen>
+
+</resources>

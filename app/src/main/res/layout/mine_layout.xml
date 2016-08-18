@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_bg_height"
+        android:orientation="horizontal"
+        android:background="@drawable/top_title_bg"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_height"
+            android:layout_weight="1" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_text_height"
+                android:gravity="center"
+                android:text="@string/my_shelf"
+                android:id="@+id/shelf_title"
+                android:layout_gravity="top"
+                style="@style/recommend_tab_style"
+                />
+            <View android:id="@+id/shelf_title_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/repeat_top_line" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tab_height"
+            android:layout_weight="1" >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tab_text_height"
+                android:gravity="center"
+                android:text="@string/user_center"
+                android:id="@+id/usercenter_title"
+                android:layout_gravity="top"
+                style="@style/recommend_tab_style"
+                />
+            <View android:id="@+id/usercenter_title_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/top_shadow" />
+        </FrameLayout>
+
+
+        </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mine_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:flipInterval="30"
+        android:persistentDrawingCache="animation"
+        />
+</LinearLayout>

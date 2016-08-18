@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/TextColorWhite"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/dialog_title"
+        />
+    <View android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/dialog_line"/>
+    <TextView
+        android:id="@+id/message"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:textSize="22sp"
+        android:textColor="@color/dialog_msg_color"
+        android:layout_marginBottom="30dp"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/ok"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/TextColorWhite"
+            android:textSize="20sp"
+            android:text="@string/Ensure"
+            android:background="@drawable/delete_ok"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            />
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/dialog_msg_color"
+            android:textSize="20sp"
+            android:text="@string/Cancel"
+            android:background="@drawable/delete_cancel"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

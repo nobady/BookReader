@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/tab_bg_height"
+    android:background="@drawable/topbar_bg">
+
+    <ImageView
+        android:id="@+id/btn_return"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:src="@drawable/topbar_btn_return_img"
+        android:background="@drawable/topbar_btn_return_bg"
+        android:layout_alignParentLeft="true"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:clickable="true"
+        />
+
+    <TextView
+        android:id="@+id/top_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/btn_return"
+        android:textColor="@color/top_title_text_color"
+        android:singleLine="true"
+        android:textSize="@dimen/tab_text_size"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

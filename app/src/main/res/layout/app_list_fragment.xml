@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.sanqiwan.reader.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/pull_refresh_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@color/transparent"
+        style="@style/list_style"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:scrollbarStyle="outsideOverlay"
+        android:smoothScrollbar="true"
+        android:footerDividersEnabled="false"
+        />
+
+    <View
+        android:id="@+id/line"
+        android:layout_height="4dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/tab_background"
+        android:layout_gravity="top"
+        />
+
+    <com.sanqiwan.reader.view.LoadingView
+        android:id="@+id/loading_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
+
+    <com.sanqiwan.reader.view.ErrorView
+        android:id="@+id/error_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        />
+</FrameLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@drawable/reader_bottom_bg"
+    android:clickable="true">
+
+    <TextView
+        android:id="@+id/background"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/reader_background"
+        android:text="@string/theme"
+        style="@style/bottom_title_night"
+        />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/reader_menu_divider_color"/>
+
+    <TextView
+        android:id="@+id/font"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/reader_font"
+        android:text="@string/font"
+        style="@style/bottom_title_night"
+        />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/reader_menu_divider_color"/>
+
+    <TextView
+        android:id="@+id/progress"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/reader_progress"
+        android:text="@string/progress_reader"
+        style="@style/bottom_title_night"
+        />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/reader_menu_divider_color"/>
+
+    <TextView
+        android:id="@+id/setting"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/reader_settings"
+        android:text="@string/setting"
+        style="@style/bottom_title_night"
+        />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/reader_menu_divider_color"/>
+
+    <TextView
+        android:id="@+id/toc"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/reader_toc"
+        android:text="@string/toc"
+        style="@style/bottom_title_night"
+        />
+</LinearLayout>

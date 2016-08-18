@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="settings_string">
+        <item>检查版本更新</item>
+        <item>意见反馈</item>
+        <item>阅读时背景灯常亮</item>
+        <item>音量键翻页阅读</item>
+        <item>精品推荐</item>
+        <item>VIP说明</item>
+    </string-array>
+
+    <string-array name="user_center_string">
+        <item>蔷薇充值</item>
+        <item>消费记录</item>
+        <item>充值记录</item>
+        <item>精品推荐</item>
+        <item>功能设置</item>
+        <item>意见反馈</item>
+    </string-array>
+
+    <string-array name="reader_backgrounds">
+        <item>甜蜜小城</item>
+        <item>冬日织物</item>
+        <item>古色祥云</item>
+        <item>寸草春晖</item>
+        <item>素色几何</item>
+        <item>质感墨灰</item>
+        <item>默认背景</item>
+    </string-array>
+</resources>

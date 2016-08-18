@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/book_item_bg"
+    >
+
+    <com.sanqiwan.reader.webimageview.WebImageView
+        android:id="@+id/cover"
+        android:layout_width="@dimen/cover_width"
+        android:layout_height="@dimen/cover_height"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/cover"
+        android:paddingRight="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/book_name"
+            android:id="@+id/tv_name"
+            android:textColor="@color/black"
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            >
+            <com.sanqiwan.reader.view.MyRatingImageStar
+                android:id="@+id/degree_detail"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="2dp"
+                />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/book_author"
+                android:textColor="@color/list_item_title_text_color"
+                android:id="@+id/tv_author"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/book_author"
+            android:id="@+id/tv_describe"
+            android:textColor="@color/list_item_title_text_color"
+            android:paddingTop="5dp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="7dp"
+        android:src="@drawable/unfinished"/>
+
+</RelativeLayout>

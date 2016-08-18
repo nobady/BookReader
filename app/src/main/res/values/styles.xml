@@ -1,0 +1,475 @@
+<resources>
+
+    <style name="FBReader.Activity" parent="android:Theme">
+    </style>
+
+    <style name="FBReader.Dialog" parent="android:Theme.Dialog">
+    </style>
+
+    <style name="MyDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="title_bar">
+        <item name="android:textColor">@color/btn_color</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="title_button" parent="title_bar">
+        <item name="android:textSize">15sp</item>
+    </style>
+
+    <style name="title_textview" parent="title_bar">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="progress_bar" parent="android:Widget.Holo.ProgressBar">
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="progress_bar_large" parent="android:Widget.Holo.ProgressBar.Large">
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="progress_bar_small" parent="android:Widget.Holo.ProgressBar.Small">
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="home_title">
+        <item name="android:textSize">16sp</item>
+    </style>
+    <style name="bottom_title" >
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/bottom_title_color</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">7dp</item>
+        <item name="android:paddingBottom">7dp</item>
+    </style>
+
+    <style name="bottom_title_night" parent="bottom_title" >
+        <item name="android:background">@drawable/bottom_btn_bg_night</item>
+        <item name="android:textColor">@color/reader_menu_title_color</item>
+    </style>
+
+    <style name="book_manager_swtich_bar_item_text">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@drawable/switch_bar_item_color</item>
+        <item name="android:background">@drawable/switch_bar_item_bg_layout</item>
+    </style>
+    <style name="book_manager_item_title_text">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/list_item_title_text_color</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="book_manager_item_info_text">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/list_item_title_text_color</item>
+    </style>
+
+    <style name="payment_next">
+        <item name="android:textSize">@dimen/payment_next_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="payment_item_title">
+        <item name="android:textSize">@dimen/payment_item_title_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/payment_item_title_color</item>
+        <item name="android:layout_marginTop">@dimen/payment_item_margin_two</item>
+    </style>
+
+    <style name="payment_item">
+        <item name="android:textSize">@dimen/payment_item_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/payment_item_tip_color</item>
+        <item name="android:layout_marginTop">@dimen/payment_item_margin_four</item>
+    </style>
+
+    <style name="payment_item_button">
+        <item name="android:textSize">@dimen/payment_item_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/payment_item_color</item>
+        <item name="android:background">@drawable/btn_payment_item</item>
+    </style>
+
+    <style name="payment_item_unicom_button">
+        <item name="android:textSize">@dimen/payment_item_title_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/payment_user_name_color</item>
+    </style>
+
+    <style name="payment_item_user_name">
+        <item name="android:textSize">@dimen/payment_next_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/payment_user_name_color</item>
+    </style>
+
+    <style name="payment_explain">
+        <item name="android:textSize">@dimen/payment_item_size</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/payment_explain_color</item>
+    </style>
+
+    <style name="payment_edit_text">
+        <item name="android:textSize">@dimen/payment_item_title_size</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textColor">@color/payment_user_name_color</item>
+        <item name="android:layout_marginLeft">@dimen/payment_item_margin_three</item>
+        <item name="android:layout_marginRight">@dimen/payment_item_edit_text_margin</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/bg_edit_text</item>
+    </style>
+
+    <style name="dialog_style" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="reader_menu_style" parent="android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:background">@color/transparent</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowAnimationStyle">@style/reader_menu_animation_style</item>
+    </style>
+
+    <style name="reader_menu_animation_style">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="progress_dialog_style" parent="dialog_style">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <style name="list_item_style">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/list_item_text_color</item>
+    </style>
+    <style name="read_button_style">
+        <item name="android:textColor">@color/white_text_color</item>
+        <item name="android:background">@drawable/button_bg</item>
+    </style>
+
+    <style name="login_button_style" parent="read_button_style">
+        <item name="android:textSize">@dimen/login_button_text_size</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:paddingTop">6dp</item>
+        <item name="android:paddingBottom">6dp</item>
+    </style>
+    <style name="subscribed_text_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/subscribe_text_color</item>
+    </style>
+    <style name="recommend_tab_style">
+        <item name="android:textSize">@dimen/tab_text_size</item>
+        <item name="android:textColor">@drawable/recommend_tab_color</item>
+        <item name="android:background">@drawable/tab_bg</item>
+    </style>
+    <style name="AlipayBGCanvas320x480">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <!--
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginRight">2dp</item>
+        -->
+        <item name="android:paddingBottom">2dp</item>
+    </style>
+    <style name="AlipayInputCanvas320x480">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+    </style>
+
+
+
+    <style name="InputLongNameTextBeforeEdit320x480">
+        <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_marginTop">9dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="InfoText320x480">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/TextColorRed</item>
+        <item name="android:textSize">16dp</item>
+        -->
+    </style>
+    <style name="AlipayInputLongNameText320x480">
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:textSize">16dp</item>
+        <!--
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        -->
+    </style>
+    <style name="InputLongNameBeforeEditText320x480">
+        <item name="android:layout_width">110dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">right</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="AlipayInputContentText320x480">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:textSize">16dp</item>
+        <!--
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        -->
+    </style>
+    <style name="AlipayDealQueryContentText320x480">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">2dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="AlipayNormalText320x480">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="AlipayListInfoMoneyText320x480">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:gravity">right</item>
+        <!--
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:ellipsize">marquee</item>
+        -->
+    </style>
+    <style name="AlipayListInfoCenterText320x480">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <!--
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:ellipsize">marquee</item>
+        -->
+    </style>
+    <style name="AlipayListInfoLineText320x480">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_marginLeft">32dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:textSize">16dp</item>
+        <!--
+        <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">marquee</item>
+        -->
+    </style>
+    <style name="AlipayMoneyUnit320x480">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textSize">16dp</item>
+        <!-- <item name="android:layout_centerVertical">true</item> -->
+    </style>
+    <style name="AlipayInputEditText320x480">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">64</item>
+        <item name="android:textSize">16dp</item>
+        <!--
+        <item name="android:layout_centerVertical">true</item>
+        -->
+    </style>
+    <style name="AlipayLoginPasswordInputEditText320x480">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:password">true</item>
+        <item name="android:textSize">16dp</item>
+        <!--
+        <item name="android:layout_centerVertical">true</item>
+        -->
+    </style>
+
+    <style name="AlipayEditText320x480">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">35dip</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+
+    <style name="AlipayMoneyInputEditText320x480">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">38dp</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">64</item>
+        <item name="android:numeric">decimal</item>
+        <item name="android:textSize">16dp</item>
+        <!--
+        <item name="android:layout_centerVertical">true</item>
+        -->
+    </style>
+    <style name="AlipayNormalButtonStyle320x480">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textColor">@color/TextColorWhite</item>
+        <item name="android:textSize">24dp</item>
+    </style>
+    <style name="AlipayRadioButtonStyle320x480">
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/TextColorBlack</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+
+    <style name="AlipayInfoText320x480">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/TextColorGray</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="delete_dialog_style" parent="@style/dialog_style">
+        <item name="android:windowIsFloating">false</item>
+    </style>
+    <style name="category_tab_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@drawable/category_tab_text_color</item>
+        <item name="android:paddingTop">@dimen/category_tab_padding</item>
+        <item name="android:paddingBottom">@dimen/category_tab_padding</item>
+    </style>
+    <style name="empty_view_style">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/null_err_code</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="user_register_edit_style">
+        <item name="android:textSize">@dimen/register_text_size</item>
+        <item name="android:padding">@dimen/register_edit_padding</item>
+        <item name="android:layout_marginTop">@dimen/register_margin_top</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:textColorHint">@color/register_hint</item>
+        <item name="android:background">@drawable/edit_back</item>
+        <item name="android:textColor">@color/login_text_color</item>
+    </style>
+    <style name="book_detail_author">
+        <item name="android:textSize">@dimen/detail_author</item>
+        <item name="android:textColor">@color/info_detail</item>
+    </style>
+    <style name="retry_btn_style">
+        <item name="android:textSize">@dimen/autocomplete_text_size</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="list_style">
+        <item name="android:divider">@drawable/boundary</item>
+        <item name="android:dividerHeight">1px</item>
+        <item name="android:cacheColorHint">@color/transparent</item>
+    </style>
+
+    <style name="network_error">
+        <item name="android:textColor">@color/app_list_item_moreinfo_color</item>
+        <item name="android:text">@string/network_error_tips</item>
+    </style>
+
+    <style name="list_game_name_style">
+        <item name="android:textSize">@dimen/game_list_title</item>
+        <item name="android:textColor">@color/app_list_item_game_name</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+    <style name="list_game_moreinfo_style">
+        <item name="android:textSize">@dimen/game_list_more_info_size</item>
+        <item name="android:textColor">@color/app_list_item_moreinfo_color</item>
+        <item name="android:layout_marginLeft">5dp</item>
+    </style>
+
+    <style name="progress_text_style">
+        <item name="android:textColor">@color/app_list_item_moreinfo_color</item>
+        <item name="android:text">@string/home_progressbar_title</item>
+    </style>
+
+    <style name="app_tips">
+        <item name="android:paddingLeft">13dp</item>
+        <item name="android:paddingRight">13dp</item>
+        <item name="android:textColor">@color/pull_to_refresh_header_vertical_title</item>
+    </style>
+</resources>

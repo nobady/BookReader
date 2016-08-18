@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="search">搜索</string>
+    <string name="next_chapter">下一章</string>
+    <string name="loading_chapter">正在加载章节</string>
+    <string name="home_search_hint">藏书阁搜索更多好看书籍......</string>
+    <string name="app_exit_tips">再按一次退出程序</string>
+
+    <string name="pull_to_refresh_footer_release_label">松开后加载</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+
+    <string name="btn_back">返回</string>
+
+    <string name="author">作者：</string>
+    <string name="book_topic">蔷薇专题</string>
+    <!--BookReaderActivity-->
+    <string name="firstchapter">已经是第一章了</string>
+    <string name="lastchapter">已经是最后一章了</string>
+    <string name="splashtext">一个人的临死遗言，就像深沉的音乐一般</string>
+
+    <string name="app_name">蔷薇书院</string>
+
+    <string name="btn_cancel">取消</string>
+    <string name="btn_confirm">确认</string>
+
+    <string name="replace_img_tag">顶！</string>
+    <string name="sending_tip">正在发送中…</string>
+    <string name="comment_success">评论发送成功！</string>
+    <string name="comment_failed">对不起，评论信息发送失败，请重新发送！</string>
+    <string name="prohibit_submit_tips">您的评论正在发送中，请稍后再评论！</string>
+    <string name="search_book">搜书</string>
+    <string name="add_book_stacks">加入书库</string>
+    <string name="state">状态：%1$S</string>
+    <string name="writing">连载中</string>
+    <string name="finished">完结</string>
+    <string name="directory">书籍目录</string>
+    <string name="no_volume">加载目录失败，请稍后重试！</string>
+    <string name="no_comment">第一个，坐沙发！</string>
+    <string name="volume_txt">最新目录</string>
+    <string name="all_volume_txt">全部目录</string>
+    <string name="comment_txt">书籍评论</string>
+    <string name="comment_hint">欢迎发表评论</string>
+    <string name="all_comment_txt">全部评论</string>
+    <string name="unfold_txt">收起</string>
+    <string name="fold_txt">展开</string>
+    <string name="public_txt">发表</string>
+    <string name="book_size">字数：%1$d字</string>
+    <string name="already_into_books">已入书库</string>
+    <string name="reading">点击阅读</string>
+    <string name="online_read">在线阅读</string>
+    <string name="book_detail">小说详情</string>
+    <string name="percent">%</string>
+    <string name="splash_description_1">去留无意，闲看庭前花开花落；宠辱不惊，漫观天外云卷云舒。</string>
+    <string name="splash_description_2">我们最大的错误，就是把最差的脾气和最糟糕的一面都给了最亲近的人。</string>
+    <string name="splash_description_3">一心一意是这世上最温柔的力量。</string>
+    <string name="title_type">分类</string>
+    <string name="title_choice">精选</string>
+    <string name="title_new">新书</string>
+    <string name="prev_chapter">上一章</string>
+    <string name="day">白天</string>
+    <string name="eye_protect">护眼</string>
+    <string name="night">夜间</string>
+    <string name="zoom_in">缩小</string>
+    <string name="zoom_out">放大</string>
+    <string name="toc">目录</string>
+    <string name="bookitem_describe">简介：</string>
+    <string name="no_wifi">亲，请拔出天线吧，没有网络，我接收不到数据啊…</string>
+    <string name="data_loading">数据正驾着五彩祥云赶来…</string>
+    <string name="no_data">数据被土豪绑走了，我们正在努力营救中…</string>
+    <string name="smallest">主人，不要再点啦，再点我就小到你看不见了…</string>
+    <string name="biggest">主人，我已经大到可以顶天立地啦…</string>
+    <string name="buy_vip_chapter">购买</string>
+    <string name="subscription_title">付费阅读</string>
+    <string name="subscription_tips_price">以下小说章节为VIP章节，每千字为0.03元</string>
+    <string name="buy_all">购买全部章节，需： 1200个蔷薇币</string>
+    <string name="buy_one">购买一章试试，需9个蔷薇币</string>
+    <string name="subscription_custom">自定义购买VIP章节：</string>
+    <string name="overage">我的余额</string>
+    <string name="consumption_head">本次需消费</string>
+    <string name="consumption_bottom">个蔷薇币</string>
+    <string name="recharge">充值</string>
+    <string name="ok">确定</string>
+    <string name="select_all">全部选定</string>
+    <string name="qwb">蔷薇币</string>
+
+    <string name="payment_title_txt">充值蔷薇币</string>
+    <string name="alipay_txt">支付宝充值</string>
+    <string name="cmccpay_txt">中国移动充值</string>
+    <string name="telecom_txt">中国电信充值</string>
+    <string name="unicom_txt">中国联通充值</string>
+    <string name="unicom_card_txt">联通充值卡充值</string>
+    <string name="telecom_card_txt">电信充值卡充值</string>
+    <string name="alipay_title_txt">手机版支付宝充值：</string>
+    <string name="cmccpay_title_txt">中国移动话费充值：</string>
+    <string name="telecom_title_txt">中国电信短信充值：</string>
+    <string name="unicom_title_txt">中国联通短信充值：</string>
+    <string name="telecom_card_title_txt">中国电信充值卡充值：</string>
+    <string name="unicom_card_title_txt">中国联通充值卡充值：</string>
+    <string name="payment_user_txt">充值账户</string>
+    <string name="payment_amount_txt">充值金额</string>
+    <string name="next_txt">下一步</string>
+    <string name="phone_num_txt">手机号码:</string>
+    <string name="card_num_txt">充值卡号:</string>
+    <string name="card_num_hint_txt">请输入充值卡号码</string>
+    <string name="card_password_txt">充值卡密码:</string>
+    <string name="card_password_hint_txt">请输入充值卡密码</string>
+    <string name="unicom_hint_txt">请输入联通手机号码</string>
+    <string name="telecom_hint_txt">请输入电信手机号码</string>
+    <string name="ratio_txt">%1$d元=%2$d蔷薇币</string>
+    <string name="two_txt">2元(80蔷薇币)</string>
+    <string name="three_txt">3元</string>
+    <string name="six_txt">6元</string>
+    <string name="twelve_txt">12元</string>
+    <string name="ten_txt">10元</string>
+    <string name="fifteen_txt">15元</string>
+    <string name="twenty_txt">20元</string>
+    <string name="thirty_txt">30元</string>
+    <string name="fifty_txt">50元</string>
+    <string name="hundred_txt">100元</string>
+    <string name="three_hundred_txt">365元</string>
+    <string name="payment_success_title">充值成功</string>
+    <string name="payment_success_tip">，您已付款成功！</string>
+    <string name="payment_money">本次您成功购买%1$d蔷薇币！</string>
+    <string name="payment_delay">亲，付款需要时间，充值蔷薇币可能会延迟1-15分钟到账，请耐心等待哦！</string>
+    <string name="check_account">查看余额</string>
+    <string name="user_helper_content">温馨提示：\n&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;如有充值问题，请蔷薇小说客服联系，周一至周五 9:00—18:00。客服电话：<a href="tel:02085559465">020-85559465</a></string>
+
+    <string name="payment_tip">请输入手机号\\充值卡号和密码！</string>
+    <string name="payment_error_tip">发送您的充值请求失败，请重新充值！</string>
+    <string name="payment_response_tip">充值发生异常，请稍后再试！</string>
+    <string name="payment_network_tip">网络发生异常，请稍后再试！</string>
+    <string name="payment_failed_tip">亲，充值失败，请重新充值！</string>
+    <string name="cmcc_dialog_title">确认充值</string>
+    <string name="cmcc_confirm_content">我们将您的充值请求以短信形式发送，按照短信返回指令回复后，才会为您充值成功！请确认发送短信！</string>
+
+    <string name="qw_account">蔷薇账号</string>
+    <string name="qw_password">蔷薇密码</string>
+    <string name="qw_account_hint">蔷薇用户名/绑定手机号</string>
+    <string name="qw_password_hint">输入密码</string>
+    <string name="forget_password_text">忘记密码</string>
+    <string name="find_password_button">找回密码</string>
+    <string name="find_password_title">找回蔷薇密码</string>
+    <string name="find_password_hint">请输入注册时绑定的手机号码/邮箱账号</string>
+    <string name="register_text">注册蔷薇账号</string>
+    <string name="login_text">登录</string>
+    <string name="register_account_hint">请输入4-16位文字作为用户名</string>
+    <string name="register_password_hint">请输入6-16位字母或数字作为密码</string>
+    <string name="register_password_length_tip">密码的长度是6-16位</string>
+    <string name="not_binder_phone">未绑定手机号码</string>
+    <string name="register_email_hint">请输入你的电子邮箱地址</string>
+    <string name="phone_register_password_hint">请输入收到的短信密码</string>
+    <string name="register_use_phone">手机快速注册</string>
+    <string name="register_use_phone_hint">请输入你的手机号码</string>
+    <string name="register_button">注册账号</string>
+    <string name="phone_register_title">手机号注册蔷薇账号</string>
+    <string name="finish_phone_register">完成注册</string>
+
+    <string name="setting">设置</string>
+    <string name="user_center">个人中心</string>
+    <string name="consume_history">消费记录</string>
+    <string name="pay_history">充值记录</string>
+    <string name="vip_describe">VIP说明</string>
+    <string name="function_settings">功能设置</string>
+    <string name="exit">退出\n登录</string>
+    <string name="should_enter_username">你需要输入用户名</string>
+    <string name="should_enter_phone">你需要输入手机号码</string>
+    <string name="should_enter_password">你需要输入密码</string>
+    <string name="should_enter_email">你需要输入一个电子邮箱地址</string>
+    <string name="my">我的</string>
+    <string name="forbid_error">禁止登录</string>
+    <string name="username_password_error">用户名或密码错误</string>
+    <string name="not_know_error">未知错误</string>
+    <string name="find_account_hint">请输入你的用户名</string>
+    <string name="find_email_hint">请输入你绑定的邮箱帐号</string>
+    <string name="find_pass_success">充值密码邮件已经发送到你绑定的邮箱中，请进入邮箱进行后续操作。</string>
+    <string name="btn_modify_password">修改密码</string>
+    <string name="enter_old_password">请输入你的原始密码</string>
+    <string name="enter_new_password">请输入你的新密码</string>
+    <string name="confirm_new_password">再输入一遍你的新密码</string>
+    <string name="need_old_password">你需要输入你的老密码</string>
+    <string name="should_not_null">不可以为空</string>
+    <string name="not_equals">两次输入不同</string>
+    <string name="modify_succuss">恭喜，成功修改密码</string>
+    <string name="my_point">我的积分</string>
+    <string name="my_money">我的余额</string>
+    <string name="my_phone">手机号码</string>
+    <string name="my_email">电子邮箱</string>
+    <string name="cmcc_payment_msg">短信发送成功后，在1-15分钟内，重新登录查看您的余额！</string>
+    <string name="cmcc_payment_num">1065800883271</string>
+    <string name="you_pay_record">，你的充值记录</string>
+    <string name="you_consume_record">，你的消费记录</string>
+    <string name="pay_channel">通过%1$s充值成功</string>
+    <string name="pay_money">充值%1$d蔷薇币</string>
+    <string name="consume_money">消耗%1$d蔷薇币</string>
+    <string name="cmcc_payment_delimiter">#N</string>
+    <string name="no_service">您所在的地区暂未开通服务，请选用其他方式支付</string>
+    <string name="modify_password_title">修改蔷薇密码</string>
+    <string name="no_consume_record">你还没有消费记录呀！</string>
+    <string name="no_payment_record">亲，你还没充值过呢！</string>
+    <string name="modify_success_tips">密码修改成功，请保管好你的密码。</string>
+    <string name="retrieve_success_tips">密码找回邮件已经发送到你的验证邮箱，请进入你的邮箱进行后续操作。</string>
+    <string name="get_back_pass_phone">温馨提示:\n手机号码注册的会员如遗忘密码，请使用此手机号码，报答蔷薇书院客服电话咨询。客服服务时间：周一～周五 9：00-18：00
+        \n<a href="tel:02085559465">客服电话：020-85559465</a></string>
+    <string name="my_consumption">消费%1$d个蔷薇币</string>
+    <string name="my_overage">我的余额： %1$d蔷薇币</string>
+    <string name="my_count_of_select">已选定%1$d章</string>
+    <string name="subscription_tips">以下小说为VIP章节，需付费购买</string>
+    <string name="subscribed_chapters">你已成功购买%1$d章</string>
+    <string name="subscribed_consumption">共%1$d蔷薇币</string>
+    <string name="continue_read">继续阅读</string>
+    <string name="repurchase">重新购买</string>
+    <string name="about_vip_title">VIP会员级别说明</string>
+    <string name="about_vip_content">
+        <b>1、初级VIP会员：</b> \n
+        费用：一次性充值10元（1000蔷薇币）以上，充值金额全部兑换成等额价值的蔷薇币。初级VIP升级成为高级VIP或粉钻会员时，只需在升级VIP会员时选择成为高级VIP会员或粉钻会员即可。\n
+        初级VIP会员权利：\n
+        1、以4分每千字价格阅读蔷薇VIP作品内容。\n
+        2、一次性增加蔷薇积分300分。 \n
+        3、一次性增加蔷薇书架藏书量30本，并单独享有无限量藏书的VIP书架权利。\n
+        4、通过使用蔷薇虚拟货币，可以提前阅读蔷薇书院独家签约作品章节。\n
+        5、每月拥有1张保底月票（初级VIP会员需满足上一月订阅消费RMB3元，才可使用当月保底月票；当月新加入的初级VIP会员，当月没有保底月票）。\n
+        <em>初V 特色：充值起点较低，订阅价格较高，无会员费。</em>\n \n
+
+        <b>2、高级VIP会员：</b>\n
+        费用：一次性充值50元（5000蔷薇币）以上，升级后其中30元（3000蔷薇币）将作为高级VIP会员费，余额则兑换成等额价值的蔷薇币。会员费为终身制，以后无需再次支付。高级VIP会员升级成为粉钻会员时，只需在续费时选择成为粉钻会员即可。\n
+        高级VIP会员权利：\n
+        1、以3分每千字价格阅读蔷薇VIP作品内容。\n
+        2、一次性增加蔷薇积分500分。\n
+        3、一次性增加蔷薇书架藏书量50本，并单独享有无限量藏书的VIP书架权利。\n
+        4、通过使用蔷薇虚拟货币，可以提前阅读蔷薇书院独家签约作品章节。\n
+        5、有资格参予每年举行的各类VIP奖励和投票活动。\n
+        6、每月拥有2张保底月票（高级VIP会员需满足上一月订阅消费RMB2元，才可使用当月保底月票；当月新加入的高级VIP会员，当月内不受此限制）。\n
+        <em>高V 特色：充值起点较低，订阅价格较低，有会员费。</em>\n \n
+
+        <b>3、粉钻会员：</b>\n
+        费用：一次性充值365元（36500蔷薇币）以上，充值金额全部兑换成等额价值的蔷薇币。\n
+        粉钻会员权利：\n
+        1、以3分每千字价格阅读蔷薇VIP作品内容。\n
+        2、一次性增加蔷薇积分3650分。\n
+        3、一次性增加蔷薇书架藏书量100本，并单独享有无限量藏书的VIP书架权利。\n
+        4、通过使用蔷薇虚拟货币，可以提前阅读蔷薇书院独家签约作品章节。\n
+        5、有资格参予每年举行的各类VIP奖励和投票活动。\n
+        6、每月拥有3张保底月票（粉钻会员需满足上一月订阅消费满RMB2元，才可使用当月保底月票；当月新加入的粉钻会员，当月内不受此限制）。\n
+        <em>粉钻 特色：充值起点较高，订阅价格较低，无会员费，更可享受专属粉钻会员的活动。</em>\n \n
+
+        <b>相关说明：</b>\n
+        1、人民币与蔷薇虚拟币兑换比例为：1元人民币=100蔷薇币。\n
+        2、拥有蔷薇高级vip和粉钻会员资格后，再次充值无需申请会员资格。\n
+    </string>
+    <string name="overage_not_enough">您的余额不足，请充值！</string>
+    <string name="subscribed_failed">VIP章节购买失败\n请重新提交购买</string>
+    <string name="today_recommend">今日推荐</string>
+    <string name="hot_read">热门阅读</string>
+    <string name="hot_recommend">热门推荐</string>
+    <string name="new_finish">精品完结</string>
+    <string name="new_potential">潜力新作</string>
+    <string name="recommend_txt">推荐</string>
+    <string name="classification_txt">分类</string>
+    <string name="search_txt">搜索</string>
+    <string name="topic_txt">专题</string>
+    <string name="mine_txt">我的</string>
+    <!-- alipay string -->
+    <string name="remote_call_failed">Failure calling remote service</string>
+    <string name="confirm_install_hint">"安装提示"</string>
+    <string name="confirm_install">"为保证您的交易安全，需要您安装支付宝安全支付服务，才能进行付款。\n\n点击确定，立即安装。"</string>
+    <string name="Ensure">"确定"</string>
+    <string name="Cancel">"取消"</string>
+    <string name="check_sign_failed">您的订单信息已被非法篡改。</string>
+
+
+    <string name="local_shelf">本地书架</string>
+    <string name="my_shelf">我的书架</string>
+    <string name="recent_read">最近阅读</string>
+    <string name="author_format">作者：%1$s</string>
+    <string name="describe_format">简介：%1$s</string>
+    <string name="new_finish_empty_view">没有内容</string>
+    <string name="city">都市言情</string>
+    <string name="ancient">古代言情</string>
+    <string name="across">穿越言情</string>
+    <string name="fantasy">玄幻言情</string>
+    <string name="no_read_history">还无阅读记录，海量图书速来阅读哟～</string>
+    <string name="delete_title">移除</string>
+    <string name="delete_history_msg">确定删除“ %1$s ”的阅读记录吗？</string>
+    <string name="delete_book_msg">确定删除图书“ %1$s ”吗？</string>
+    <string name="search_recommend_more">下一批很给力</string>
+    <string name="add_more_book">添加更多图书</string>
+    <string name="hot_recommend_empty_view">没有内容</string>
+    <string name="network_error_tips">请检查网络</string>
+    <string name="no_update_tip">不要再点了，已经是最新版本了！</string>
+    <string name="no_wifi_tip">没有wifi连接， 只在wifi下更新</string>
+    <string name="time_out_tip">我拉不动更新啊，是不是没有网络啊！</string>
+    <string name="mode">模式</string>
+    <string name="theme">主题</string>
+    <string name="font">字体</string>
+    <string name="progress_reader">进度</string>
+    <string name="mode_day">日间模式</string>
+    <string name="mode_night">夜间模式</string>
+    <string name="progress">进度调整</string>
+    <string name="paging">左右翻页</string>
+    <string name="scrolling">上下翻页</string>
+    <string name="horizontal">横屏阅读</string>
+    <string name="vertical">竖屏阅读</string>
+    <string name="volume_turn">音量键翻页</string>
+    <string name="background_light">背景灯常亮</string>
+    <string name="update_title">更新</string>
+    <string name="update_msg">“ %1$s ”有新的内容更新啦，要不要更新呢？</string>
+    <string name="retry_btn">重试</string>
+    <string name="day_mode">日间模式</string>
+    <string name="night_mode">夜间模式</string>
+    <string name="default_mode">默认模式</string>
+    <string name="fist_page_tips">已到达第一页</string>
+    <string name="last_page_tips">已到达最后一页</string>
+    <string name="not_login">尚未登录</string>
+    <string name="login_msg">尚未登录,无法进行评论，请登录。</string>
+    <string name="login_button">登录</string>
+    <string name="cancel_button">取消</string>
+    <string name="app_size">大小</string>
+    <string name="try_again">重试</string>
+    <string name="home_progressbar_title">玩命加载中...</string>
+    <string name="promotion">精品推荐</string>
+    <string name="comment">评论</string>
+    <string name="tags">标签：%1$S</string>
+    <string name="next_more">换一批</string>
+
+    <string name="channel_text">频道</string>
+    <string name="classification_title">分类</string>
+    <string name="ranklist_title">排行榜</string>
+    <string name="wake_up_content_txt">都3天了，你碰都不碰我，这日子没法过了啊！</string>
+    <string name="authorization">独家签约</string>
+    <string name="non_authorization">蔷薇首发</string>
+    <string name="wechat_txt">微信充值</string>
+</resources>

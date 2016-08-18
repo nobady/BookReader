@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="search_recommend_key_size_one">8sp</dimen>
+    <dimen name="search_recommend_key_size_two">10sp</dimen>
+    <dimen name="search_recommend_key_size_three">11sp</dimen>
+    <dimen name="search_recommend_key_size_four">13sp</dimen>
+    <dimen name="search_recommend_key_size_five">15sp</dimen>
+
+    <dimen name="search_recommend_radius_size_one">37dp</dimen>
+    <dimen name="search_recommend_radius_size_two">47dp</dimen>
+    <dimen name="search_recommend_radius_size_three">52dp</dimen>
+    <dimen name="search_recommend_radius_size_four">57dp</dimen>
+    <dimen name="search_recommend_radius_size_five">63dp</dimen>
+    <dimen name="search_recommend_margin_left">23dp</dimen>
+    <dimen name="search_recommend_column_margin">3dp</dimen>
+    <dimen name="search_recommend_margin_top">20dp</dimen>
+    <dimen name="search_recommend_margin_bottom">2dp</dimen>
+    <dimen name="search_recommend_row_margin">2dp</dimen>
+
+    <dimen name="mi3_search_recommend_key_size_one">4sp</dimen>
+    <dimen name="mi3_search_recommend_key_size_two">6sp</dimen>
+    <dimen name="mi3_search_recommend_key_size_three">7sp</dimen>
+    <dimen name="mi3_search_recommend_key_size_four">8sp</dimen>
+    <dimen name="mi3_search_recommend_key_size_five">10sp</dimen>
+</resources>

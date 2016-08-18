@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_bg_nor"
+    android:gravity="center_vertical">
+
+
+    <TextView
+        android:id="@+id/btn_home_mine"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/bottom_btn_my"
+        android:text="@string/mine_txt"
+        style="@style/bottom_title"
+        />
+
+    <TextView
+        android:id="@+id/btn_home_recommend"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:drawableTop="@drawable/bottom_btn_recommend"
+        android:text="@string/recommend_txt"
+        style="@style/bottom_title"
+        />
+
+    <TextView
+        android:id="@+id/btn_home_classification"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:drawableTop="@drawable/bottom_btn_classification"
+        android:text="@string/channel_text"
+        style="@style/bottom_title"
+        />
+
+    <TextView
+        android:id="@+id/btn_home_search"
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/bottom_btn_search"
+        android:text="@string/search_txt"
+        style="@style/bottom_title"
+        />
+
+    <TextView
+        android:id="@+id/btn_home_topic"
+        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:drawableTop="@drawable/bottom_btn_topic"
+        android:text="@string/topic_txt"
+        style="@style/bottom_title"
+        />
+
+</LinearLayout>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cover_height">100dp</dimen>
+    <dimen name="cover_width">70dp</dimen>
+    <dimen name="book_cover_detail_height">177dp</dimen>
+    <dimen name="book_cover_detail_width">130dp</dimen>
+    <dimen name="gallery_pic_height">130dp</dimen>
+    <dimen name="gallery_pic_width">94dp</dimen>
+    <dimen name="gallery_height">168dp</dimen>
+    <integer name="gallery_pic_height">284</integer>
+    <integer name="gallery_pic_width">127</integer>
+
+    <dimen name="payment_button_margin_right">3dp</dimen>
+    <dimen name="payment_margin_one">13dp</dimen>
+    <dimen name="payment_margin_two">8dp</dimen>
+    <dimen name="payment_next_height">43dp</dimen>
+    <dimen name="payment_item_margin_one">20dp</dimen>
+    <dimen name="payment_item_margin_two">5dp</dimen>
+    <dimen name="payment_item_margin_three">10dp</dimen>
+    <dimen name="payment_item_margin_four">6dp</dimen>
+    <dimen name="payment_item_height">40dp</dimen>
+    <dimen name="payment_item_text_padding">5dp</dimen>
+    <dimen name="payment_item_text_padding_right">17dp</dimen>
+    <dimen name="payment_item_edit_text_margin">15dp</dimen>
+    <dimen name="payment_next_size">21sp</dimen>
+    <dimen name="payment_item_title_size">19sp</dimen>
+    <dimen name="payment_item_size">17sp</dimen>
+    <dimen name="payment_button_size">13sp</dimen>
+    <dimen name="payment_button_margin">10dp</dimen>
+
+    <dimen name="pay_success_margin_top">23dp</dimen>
+    <dimen name="category_city_width">172dp</dimen>
+    <dimen name="category_city_height">100dp</dimen>
+    <dimen name="category_city_padding">3dp</dimen>
+    <dimen name="top_bar_height">60dp</dimen>
+    <dimen name="category_tab_padding">10dp</dimen>
+    <dimen name="horizontal_list_height">40dp</dimen>
+
+    <!--book_item-->
+    <dimen name="book_name">16sp</dimen>
+    <dimen name="book_author">14sp</dimen>
+    <dimen name="recent_read_title_size">13sp</dimen>
+
+    <dimen name="volume_item">46dp</dimen>
+    <dimen name="volume_item_size">15sp</dimen>
+
+
+    <!--recommend_fragment_tab-->
+    <dimen name="tab_height">44dp</dimen>
+    <dimen name="tab_text_height">43dp</dimen>
+    <dimen name="tab_text_size">22sp</dimen>
+    <dimen name="tab_bg_height">48dp</dimen>
+
+    <!--book_detail-->
+    <dimen name="detail_book_name">18sp</dimen>
+    <dimen name="detail_author">16sp</dimen>
+
+    <!--search-->
+    <dimen name="autocomplete_text_size">16sp</dimen>
+    <dimen name="recommend_more_margin_bottom">90dp</dimen>
+    <dimen name="hint_padding">10dp</dimen>
+    <dimen name="search_btn_height">32dp</dimen>
+
+    <dimen name="all_volume_margin">7dp</dimen>
+    <dimen name="user_image_width">47dp</dimen>
+    <dimen name="user_image_height">47dp</dimen>
+    <dimen name="detail_tab_height">39dp</dimen>
+    <dimen name="recommend_item_height">100dp</dimen>
+
+</resources>

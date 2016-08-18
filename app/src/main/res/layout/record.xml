@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/user_center_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/topbar"
+        android:id="@+id/topbar"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/record_tittle_bg">
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/record_avatar"/>
+        <TextView
+            android:id="@+id/user_name"
+            android:textColor="@color/record_user_name_color"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/record_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/record_title_color"
+            android:textSize="18sp"
+            android:text="，你的消费记录"/>
+
+    </LinearLayout>
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@drawable/diver_line"
+        />
+    <TextView android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="15sp"
+        android:textColor="@color/null_err_code"/>
+    <ListView
+        android:id="@+id/lv_record"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/transparent"
+        android:alwaysDrawnWithCache="false"
+        android:footerDividersEnabled="true"
+        android:headerDividersEnabled="true"
+        android:divider="@drawable/diver_line"/>
+</LinearLayout>

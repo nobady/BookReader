@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="white">#ffffffff</color>
+    <color name="pick">#ff85a7</color>
+    <color name="home_background">#ffefefef</color>
+    <color name="search_background">#ffffeced</color>
+    <color name="pink">#fffa7c7c</color>
+    <color name="content_background">#fff9f9f9</color>
+    <color name="chaptername">#ffa3a3a3</color>
+    <color name="chapterid">#fff16575</color>
+    <color name="bottom_bar_nor">#ff827c80</color>
+    <color name="bottom_bar_press">#ffc78490</color>
+    <color name="search_text">#ff414141</color>
+    <color name="may_youlove_back">#fff3f3f3</color>
+    <color name="book_name_detail">#ff333333</color>
+    <color name="status_detail">#ffc78490</color>
+    <color name="info_detail">#ff666666</color>
+    <color name="directory_table_detail">#ff848484</color>
+    <color name="recomend_back">#ffeaeaea</color>
+    <color name="list_transparent">#00000000</color>
+    <color name="black">#ff000000</color>
+    <color name="text_his_continue">#ffed6297</color>
+    <color name="bg_book_reader_day">#f9f9f9</color>
+    <color name="bg_book_reader_eye_protect">#ffc7edcc</color>
+    <color name="bg_book_reader_pink">#ffc0cb</color>
+    <color name="text_book_reader_day">#ff333333</color>
+    <color name="text_book_reader_night">#ff999999</color>
+    <color name="text_book_reader_eye_protect">#ff666666</color>
+    <color name="search_white_bg">#ffffffff</color>
+    <color name="bookname_bookmanager">#ffdcdcdc</color>
+    <color name="line">#ffdddddd</color>
+    <color name="bg_online_btn">#f96e00</color>
+    <color name="bg_detail_top">#ebede9</color>
+    <color name="btn_update_press">#fffff467</color>
+    <color name="btn_del_press">#ffff8a00</color>
+    <color name="next_chapter_textview">#ffe77900</color>
+    <color name="null_err_code">#ffbfbfbf</color>
+    <color name="shaower">#ffa9a7a8</color>
+    <color name="viewflow_circle_indicator_activeColor">#ffffffff</color>
+    <color name="viewflow_circle_indicator_inactiveColor">#ff000000</color>
+    <!-- new ui color below-->
+    <color name="white_text_color">#ffffffff</color>
+    <color name="pink_text_color">#ffec6197</color>
+    <color name="list_item_title_text_color">#ff999999</color>
+    <color name="list_item_title_text_color_pressed">#ffec6197</color>
+    <color name="list_item_title_text_color_night">#ff131313</color>
+    <color name="list_item_title_text_color_pressed_night">#ffeeeeee</color>
+    <color name="viewpager_title_text_notselect_color">#ff666666</color>
+    <color name="background_color">#fffffbf0</color>
+    <color name="search_recommend_title_color">#ffea4c89</color>
+    <color name="home_title_text_color">#ffcccccc</color>
+    <color name="home_manager_text_color">#ff999999</color>
+    <color name="switch_bar_item_nor">#ff666666</color>
+    <color name="switch_bar_item_press">#ffffffff</color>
+    <color name="fragment_title_color">#ffdddddd</color>
+    <color name="fragment_title_on_color">#ffffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="reader_toc_item_bg_color_1">#fffffbf0</color>
+    <color name="reader_toc_item_bg_color_2">#fffff4d9</color>
+    <color name="reader_toc_item_bg_color_1_night">#ff666666</color>
+    <color name="reader_toc_item_bg_color_2_night">#ff999999</color>
+    <color name="translucent">#90000000</color>
+    <color name="splash_bg">#fffffbf0</color>
+    <color name="register_hint">#FFCBBEC0</color>
+    <color name="login_text_color">#FF333333</color>
+    <color name="user_center_bg">#FFF7FBFF</color>
+    <color name="payment_line">#ffc78490</color>
+    <color name="payment_selected">#ff778400</color>
+    <color name="list_item_press">#fff5e6e3</color>
+    <color name="list_item_nor">#fff7fbff</color>
+    <color name="subscription_title_color">#ffc58490</color>
+    <color name="payment_button_color">#ff7e7478</color>
+    <color name="payment_item_title_color">#ff81ac72</color>
+    <color name="payment_item_tip_color">#ffcbbec0</color>
+    <color name="payment_item_nor_color">#ff7e7578</color>
+    <color name="payment_user_name_color">#ff3e2b2e</color>
+    <color name="payment_explain_color">#ffc68490</color>
+    <color name="back_ground_color">#fff7fbff</color>
+    <color name="lv_setting_text_color">#ff7e7578</color>
+    <color name="user_info_text_color">#ff92858c</color>
+    <color name="user_info_exit_color">#ffa8a1a6</color>
+    <color name="top_title_text_color">#ffc58490</color>
+    <color name="record_tittle_bg">#fff2f2f2</color>
+    <color name="record_user_name_color">#ff80ac27</color>
+    <color name="record_title_color">#ff3e2b2e</color>
+    <color name="record_book_name">#ff333333</color>
+    <color name="record_time">#ff999999</color>
+    <color name="record_money_color">#ffc58490</color>
+    <color name="dialog_bg">#bf414141</color>
+    <color name="subscription_tips_price_color">#ff81ac72</color>
+    <color name="list_item_text_color">#ff3e2b2d</color>
+    <color name="count_of_qwb">#ffc68490</color>
+    <color name="my_consumption">#ff9e929a</color>
+    <color name="dialog_close_btn_bg_nor">#ffdeb8be</color>
+    <color name="subscribe_text_color">#ff7e7378</color>
+    <color name="empty_view_text_color">#ffc58490</color>
+
+    <color name="AppBackgroundColor">#FFC0E7FA</color>
+    <color name="TextColorBlack">#FF000000</color>
+    <color name="TextColorWhite">#FFFFFFFF</color>
+    <color name="TextColorBlue">#0066CC</color>
+    <color name="TextColorGray">#FF505050</color>
+    <color name="TextColorRed">#FFE26926</color>
+    <color name="BgColor">#ffd1dce9</color>
+
+    <color name="dialog_line">#ffc78490</color>
+    <color name="dialog_title">#ffc78490</color>
+    <color name="dialog_transparent">#9000</color>
+
+    <color name="dialog_msg_color">#ff333333</color>
+    <color name="category_tab_selected_color">#ff9f4857</color>
+
+    <color name="search_recommend_color_one">#ff7f5471</color>
+    <color name="search_recommend_color_two">#ff49363a</color>
+    <color name="search_recommend_color_three">#ff7fbfb3</color>
+
+    <color name="list_item_describe_color">#ff92858d</color>
+
+    <color name="reader_menu_divider_color">#ff565656</color>
+    <color name="reader_menu_bg_color">#ffffffff</color>
+    <color name="search_suggestion_select_bg_color">#fff5e6e3</color>
+
+    <color name="reader_bg_default">#ffffe5e4</color>
+    <color name="reader_text_default">#ff4f3534</color>
+    <color name="reader_tip_text_default">#ffb59996</color>
+
+    <color name="reader_bg_day">#ffffffff</color>
+    <color name="reader_text_day">#ff050505</color>
+    <color name="reader_tip_text_day">#ffacaca4</color>
+
+    <color name="reader_bg_night">#ff0e1817</color>
+    <color name="reader_text_night">#ff384241</color>
+    <color name="reader_tip_text_night">#ff384241</color>
+    <color name="reader_toc_press">#ffc58490</color>
+
+    <color name="reader_bottom_bg">#ff000000</color>
+    <color name="reader_bottom_bg_press">#ff0e1817</color>
+    <color name="reader_bottom_menu_bg">#f9494949</color>
+
+    <color name="new_guide_bg">#d5000000</color>
+
+    <color name="progress_color">#ffc78490</color>
+    <color name="progress_bg">#ff7e7579</color>
+
+    <color name="app_list_item_moreinfo_color">#ff999999</color>
+    <color name="app_list_item_game_name">#ff5f6365</color>
+
+    <color name="search_recommend_back_color_one">#ffe5adab</color>
+    <color name="search_recommend_back_color_two">#fffa6192</color>
+    <color name="search_recommend_back_color_three">#ff7f9aa2</color>
+    <color name="search_recommend_back_color_four">#ffff5335</color>
+    <color name="search_recommend_back_color_five">#ffd35c91</color>
+    <color name="search_recommend_back_color_six">#ff33b9e5</color>
+    <color name="search_recommend_back_color_seven">#ff868e7e</color>
+    <color name="search_recommend_title">#ff5f6365</color>
+    <color name="search_recommend_title_bg">#ffe7e7e7</color>
+    <color name="pull_to_refresh_header_vertical_title">#ff999999</color>
+    <color name="reader_menu_title_color">#ffcccccc</color>
+    <color name="classification_titlt_color">#ffc78490</color>
+    <color name="classification_head_background">#fff2f2f2</color>
+    <color name="ranklist_color">#ff333333</color>
+    <color name="authorization_text">#ffe85c8a</color>
+</resources>

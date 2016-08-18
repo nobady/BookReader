@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="gallery_pic_height">148dp</dimen>
+    <dimen name="gallery_pic_width">105dp</dimen>
+    <dimen name="gallery_height">176dp</dimen>
+
+</resources>

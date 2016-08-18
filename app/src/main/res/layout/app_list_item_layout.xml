@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:background="@drawable/bg_item_click"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:paddingLeft="14dp"
+    >
+
+    <com.sanqiwan.reader.webimageview.WebImageView
+        android:layout_height="@dimen/icon_size"
+        android:layout_width="@dimen/icon_size"
+        android:id="@+id/icon"
+        android:scaleType="fitXY"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_toRightOf="@id/icon"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:id="@+id/game_title"
+            style="@style/list_game_name_style"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:visibility="gone"
+            >
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:id="@+id/home_game_size"
+                style="@style/list_game_moreinfo_style"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            style="@style/list_game_moreinfo_style"
+            android:id="@+id/describe"
+            android:visibility="gone"
+            android:singleLine="true"
+            android:ellipsize="end"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

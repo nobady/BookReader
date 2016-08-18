@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/user_center_bg"
+    >
+
+    <LinearLayout
+        android:id="@+id/dialog_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/topbar_bg"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="13dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/record_avatar"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/cmcc_dialog_title"
+            android:textColor="@color/subscription_title_color"
+            android:textSize="20sp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:paddingLeft="13dp"
+            />
+
+        <ImageView
+            android:id="@+id/closed_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/dialog_close_icon"
+            android:background="@drawable/dialog_close_bg"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/confirm_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/dialog_top"
+        android:text="@string/cmcc_confirm_content"
+        android:textColor="@color/subscription_title_color"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:lineSpacingExtra="6dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/confirm_tip"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        >
+
+        <TextView
+            android:id="@+id/dialog_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:text="@string/btn_cancel"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            />
+
+        <TextView
+            android:id="@+id/dialog_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_bg"
+            android:text="@string/btn_confirm"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

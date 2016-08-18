@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/user_center_bg"
+    >
+
+    <include
+        android:id="@+id/comment_top"
+        layout="@layout/topbar"
+        />
+
+    <LinearLayout
+        android:id="@+id/comment_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:visibility="gone"
+        android:layout_below="@id/comment_top"
+        android:background="@color/record_tittle_bg"
+        >
+
+        <com.sanqiwan.reader.webimageview.WebImageView
+            android:id="@+id/user_image"
+            android:layout_width="@dimen/user_image_width"
+            android:layout_height="@dimen/user_image_height"
+            android:src="@drawable/comment_user_image"
+            android:scaleType="fitXY"
+            android:contentDescription="@null"
+            android:layout_centerVertical="true"
+            />
+
+        <EditText
+            android:id="@+id/comment_content"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/user_image_height"
+            android:layout_weight="1"
+            android:hint="@string/comment_hint"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:textColor="@color/info_detail"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:maxLength="100"
+            android:paddingTop="12dp"
+            android:paddingRight="12dp"
+            android:paddingBottom="12dp"
+            android:paddingLeft="20dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/comment_edit_bg"
+            android:inputType="text"
+            android:imeOptions="actionSend"
+            />
+
+        <TextView
+            android:id="@+id/comment_button"
+            android:layout_height="@dimen/search_btn_height"
+            android:layout_width="wrap_content"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="@dimen/autocomplete_text_size"
+            android:textColor="@color/white"
+            android:background="@drawable/next_bg"
+            android:text="@string/comment"
+            android:layout_gravity="center"
+            android:gravity="center"
+            />
+    </LinearLayout>
+
+    <com.sanqiwan.reader.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/book_comments"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:divider="@color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:listSelector="@color/transparent"
+        android:layout_below="@id/comment_panel"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:scrollbarStyle="outsideOverlay"
+        android:smoothScrollbar="true"
+        />
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/null_err_code"
+        android:textSize="15sp"
+        android:text="@string/no_data"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        />
+</RelativeLayout>

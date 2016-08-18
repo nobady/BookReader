@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/hot_recommend_bg"
+    >
+
+    <include
+        layout="@layout/topbar"
+        android:id="@+id/top_bar"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="top"
+        />
+
+    <com.sanqiwan.reader.pulltorefresh.library.PullToRefreshListView
+        android:id="@+id/new_finish_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:headerDividersEnabled="true"
+        android:cacheColorHint="@color/transparent"
+        android:divider="@null"
+        android:listSelector="@android:color/transparent"
+        android:layout_below="@id/top_bar"
+        />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        style="@style/progress_bar"
+        />
+
+    <LinearLayout
+        android:id="@+id/error_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        >
+
+        <TextView
+            android:id="@+id/error_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/no_wifi"
+            style="@style/empty_view_style"
+            />
+
+        <Button
+            android:id="@+id/retry_btn"
+            android:background="@drawable/next_bg"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/retry_btn"
+            style="@style/retry_btn_style"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

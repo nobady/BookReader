@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_ground_color"
+    >
+    <!-- 状态栏-->
+    <include
+        layout="@layout/topbar"
+        android:id="@+id/payment_top"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="vertical"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+            <com.sanqiwan.reader.payment.ui.PaymentListView
+                android:id="@+id/payment_channel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/payment_margin_one"
+                android:layout_marginRight="@dimen/payment_button_margin_right"
+                android:layout_marginTop="@dimen/payment_margin_two"
+                />
+
+            <com.sanqiwan.reader.payment.ui.PaymentDetailView
+                android:id="@+id/payment_ui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/payment_margin_one"
+                />
+
+            <TextView
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/payment_next_height"
+                android:text="@string/next_txt"
+                android:background="@drawable/next_bg"
+                android:layout_margin="@dimen/payment_margin_one"
+                style="@style/payment_next"
+                />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

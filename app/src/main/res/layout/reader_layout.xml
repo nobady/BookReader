@@ -1,0 +1,95 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    >
+
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.sanqiwan.reader.view.TouchLayout
+            android:layout_height="fill_parent"
+            android:layout_width="fill_parent"
+            android:id="@+id/reader_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/null_err_code"
+                android:textSize="24sp"
+                android:text="@string/no_wifi"
+                android:id="@+id/empty_view"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                />
+
+            <LinearLayout
+                android:id="@+id/subscription_tips_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/subscription_tips"
+                    android:textColor="@color/info_detail"
+                    android:textSize="18sp"
+                    />
+
+                <Button
+                    android:id="@+id/subscription"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/buy_vip_chapter"
+                    android:textSize="18sp"
+                    android:textColor="@color/white"
+                    android:background="@drawable/button_bg"
+                    android:layout_marginTop="13dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    />
+                </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                style="@style/progress_bar"
+                />
+
+        </com.sanqiwan.reader.view.TouchLayout>
+
+        <ListView
+            android:id="@+id/toc_list"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="end"
+            android:cacheColorHint="@color/transparent"
+            android:listSelector="@color/list_transparent"
+            android:divider="@drawable/default_diver_line"
+            android:dividerHeight="2px"
+            />
+
+    </android.support.v4.widget.DrawerLayout>
+
+    <ImageView android:id="@+id/new_guide"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/new_guide_bg"
+        android:scaleType="centerInside"
+        android:src="@drawable/new_guide_content"/>
+</FrameLayout>
+

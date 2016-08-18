@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/hot_recommend_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/topic_top_bar"
+        layout="@layout/topbar"
+        />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topic_top_bar"
+        android:cacheColorHint="@color/list_transparent"
+        android:listSelector="@color/transparent"
+        android:divider="@color/recomend_back"
+        android:paddingTop="14dp"
+        android:id="@+id/lv_recommend"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/null_err_code"
+        android:textSize="15sp"
+        android:paddingRight="20dp"
+        android:paddingLeft="20dp"
+        android:text="@string/no_wifi"
+        android:id="@+id/empty_view"
+        android:visibility="gone"
+        android:layout_centerInParent="true"
+        />
+</RelativeLayout>

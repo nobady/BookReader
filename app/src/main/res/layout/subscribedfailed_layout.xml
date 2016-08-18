@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subscribed_failed"
+        android:layout_marginTop="130dp"
+        android:textSize="16sp"
+        android:lineSpacingMultiplier="1.2"
+        android:layout_centerHorizontal="true"
+        />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/recharge_bg"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        >
+        <Button
+            android:id="@+id/repurchase_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="8dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:background="@drawable/button_bg"
+            android:layout_gravity="center"
+            android:text="@string/repurchase"
+            />
+    </FrameLayout>
+
+</RelativeLayout>

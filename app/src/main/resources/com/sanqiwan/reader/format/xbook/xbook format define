@@ -1,0 +1,13 @@
+a book is a folder that contains all information files of the book,
+and can be compressed to zip archive. Each of file is stored in json format.
+
+book name
+    |- book detail
+    |- table of content
+    |- content
+        |- chapter1
+        |- chapter2
+        |- chapter3
+        |- ...
+    |- style
+    |- resource

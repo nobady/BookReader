@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <com.sanqiwan.reader.webimageview.WebImageView
+        android:layout_width="@dimen/gallery_pic_width"
+        android:layout_height="@dimen/gallery_pic_height"
+        android:background="@drawable/gallery_book_cover"
+        android:id="@+id/home_gallery_imageview"
+        android:scaleType="fitXY"
+        android:layout_gravity="center"
+        />
+</FrameLayout>

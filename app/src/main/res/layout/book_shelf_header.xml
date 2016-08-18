@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/gallery_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/gallery_height"
+        android:gravity="center"
+        android:background="@drawable/top_content_bg"
+        android:layout_alignParentTop="true">
+        <Gallery
+            android:id="@+id/gallery"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:gravity="left"
+            android:layout_marginLeft="@dimen/comment_margin_left"
+            />
+        <RelativeLayout
+            android:id="@+id/empty_view"
+            android:background="@drawable/top_content_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView android:id="@+id/empty_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/history_default_icon"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:textColor="@color/info_detail"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:text="@string/no_read_history"
+                android:layout_below="@id/empty_image"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/book_shelf_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gallery_bg"
+        android:layout_alignParentLeft="true"
+        android:drawableLeft="@drawable/my_shelf_title_icon"
+        android:text="@string/local_shelf"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="@dimen/comment_margin_left"
+        android:textColor="@color/record_book_name"
+        android:textSize="18sp"
+        android:drawablePadding="4dp"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/gallery_bg"
+        android:gravity="center_vertical"
+        android:layout_alignRight="@id/gallery_bg"
+        android:background="@drawable/shelf_style_select_bg"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        >
+        <ImageView android:id="@+id/grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:src="@drawable/select_grid"
+            android:layout_toLeftOf="@+id/divder_view"
+            />
+
+        <ImageView android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text=""
+            android:src="@drawable/select_list"
+            android:layout_alignParentRight="true"
+            />
+        </LinearLayout>
+</RelativeLayout>

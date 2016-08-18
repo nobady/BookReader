@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="cover_height">100dp</dimen>
+    <dimen name="cover_width">70dp</dimen>
+    <dimen name="book_cover_detail_height">165dp</dimen>
+    <dimen name="book_cover_detail_width">132dp</dimen>
+    <dimen name="gallery_pic_height">140dp</dimen>
+    <dimen name="gallery_pic_width">100dp</dimen>
+    <dimen name="gallery_height">176dp</dimen>
+    <integer name="gallery_pic_height">255</integer>
+    <integer name="gallery_pic_width">145</integer>
+
+    <dimen name="payment_button_margin_right">3dp</dimen>
+    <dimen name="payment_margin_one">15dp</dimen>
+    <dimen name="payment_margin_two">7dp</dimen>
+    <dimen name="payment_next_height">47dp</dimen>
+    <dimen name="payment_item_margin_one">20dp</dimen>
+    <dimen name="payment_item_margin_two">8dp</dimen>
+    <dimen name="payment_item_margin_three">12dp</dimen>
+    <dimen name="payment_item_margin_four">10dp</dimen>
+    <dimen name="payment_item_height">60dp</dimen>
+    <dimen name="payment_item_text_padding">6dp</dimen>
+    <dimen name="payment_item_text_padding_right">17dp</dimen>
+    <dimen name="payment_item_edit_text_margin">15dp</dimen>
+    <dimen name="payment_next_size">22sp</dimen>
+    <dimen name="payment_item_title_size">20sp</dimen>
+    <dimen name="payment_item_size">20sp</dimen>
+    <dimen name="payment_button_size">10sp</dimen>
+    <dimen name="payment_button_margin">10dp</dimen>
+    <dimen name="pay_success_margin_top">25dp</dimen>
+    <dimen name="avatar_margin_top">-30dp</dimen>
+    <dimen name="user_panel_margin_top">40dp</dimen>
+    <dimen name="user_name_text_size">22sp</dimen>
+    <dimen name="user_center_title_text_size">24sp</dimen>
+    <dimen name="user_center_name_margin_top">48dp</dimen>
+    <dimen name="exit_text_size">20dp</dimen>
+    <dimen name="money_title_text_size">14dp</dimen>
+
+    <dimen name="book_shelf_cover_height">130dp</dimen>
+    <dimen name="book_shelf_cover_width">100dp</dimen>
+    <dimen name="category_city_width">172dp</dimen>
+    <dimen name="category_city_height">100dp</dimen>
+    <dimen name="category_city_padding">3dp</dimen>
+    <dimen name="top_bar_height">60dp</dimen>
+    <dimen name="category_tab_padding">10dp</dimen>
+    <dimen name="horizontal_list_height">40dp</dimen>
+    <integer name="cover_name_size">12</integer>
+
+    <!--book_item-->
+    <dimen name="book_name">14sp</dimen>
+    <dimen name="book_author">12sp</dimen>
+    <dimen name="recent_read_title_size">14sp</dimen>
+    <dimen name="tab_height">51dp</dimen>
+    <dimen name="tab_text_height">50dp</dimen>
+    <dimen name="tab_bg_height">55dp</dimen>
+    <dimen name="tab_text_size">20sp</dimen>
+
+    <!--login_ui-->
+    <dimen name="default_login_icon_size">66dp</dimen>
+    <dimen name="login_title_text_size">18sp</dimen>
+    <dimen name="login_button_text_size">20sp</dimen>
+    <dimen name="login_register_text_size">16sp</dimen>
+    <dimen name="login_pannel_padding_bottom">14dp</dimen>
+    <dimen name="login_setting_text_size">22sp</dimen>
+    <dimen name="login_edit_margin_top">18dp</dimen>
+    <dimen name="login_register_margin_top">12dp</dimen>
+    <dimen name="login_button_margin_top">16dp</dimen>
+
+    <dimen name="setting_text_size">18sp</dimen>
+
+    <dimen name="register_text_size">20sp</dimen>
+    <dimen name="register_edit_padding">10dp</dimen>
+    <dimen name="register_margin_top">18dp</dimen>
+
+    <dimen name="retrieve_phone_tip">20sp</dimen>
+    <!--book_detail-->
+    <dimen name="detail_book_name">18sp</dimen>
+    <dimen name="detail_author">16sp</dimen>
+
+    <dimen name="volume_item">46dp</dimen>
+    <dimen name="volume_item_size">15sp</dimen>
+    <dimen name="all_volume_margin">7dp</dimen>
+    <dimen name="user_image_width">47dp</dimen>
+    <dimen name="user_image_height">47dp</dimen>
+    <dimen name="detail_tab_height">38dp</dimen>
+    <dimen name="search_btn_height">32dp</dimen>
+    <dimen name="recommend_more_margin_bottom">90dp</dimen>
+    <dimen name="recommend_item_height">100dp</dimen>
+
+</resources>

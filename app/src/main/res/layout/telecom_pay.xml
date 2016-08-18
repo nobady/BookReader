@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.sanqiwan.reader"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:background="@drawable/diver_line"
+        android:layout_alignParentTop="true"
+        />
+    <TextView
+        android:id="@+id/payment_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_user_txt"
+        android:layout_marginLeft="@dimen/payment_item_margin_one"
+        android:layout_marginRight="@dimen/payment_margin_one"
+        android:layout_below="@id/line1"
+        style="@style/payment_item"
+        />
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_user_txt"
+        android:layout_alignBaseline="@id/payment_user"
+        android:layout_toRightOf="@id/payment_user"
+        android:layout_marginLeft="@dimen/payment_item_margin_three"
+        style="@style/payment_item_user_name"
+        />
+
+    <TextView
+        android:id="@+id/payment_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_amount_txt"
+        android:layout_below="@id/payment_user"
+        android:layout_alignLeft="@id/payment_user"
+        style="@style/payment_item"
+        />
+    <com.sanqiwan.reader.view.GridLayout
+        android:id="@+id/select_money"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/payment_amount"
+        android:layout_marginLeft="@dimen/payment_margin_one"
+        android:layout_marginRight="@dimen/payment_margin_one"
+        android:layout_marginTop="@dimen/payment_item_margin_four"
+        android_custom:columns="3"
+        >
+
+        <TextView
+            android:id="@+id/msg_ten"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/payment_item_height"
+            android:text="@string/ten_txt"
+            style="@style/payment_item_button"
+            />
+
+        <TextView
+            android:id="@+id/msg_twenty"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/payment_item_height"
+            android:text="@string/twenty_txt"
+            style="@style/payment_item_button"
+            />
+
+        <TextView
+            android:id="@+id/msg_thirty"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/payment_item_height"
+            android:text="@string/thirty_txt"
+            style="@style/payment_item_button"
+            />
+    </com.sanqiwan.reader.view.GridLayout>
+
+    <TextView
+        android:id="@+id/conversion_ratio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/select_money"
+        android:layout_alignLeft="@id/payment_user"
+        style="@style/payment_explain"
+        />
+
+    <TextView
+        android:id="@+id/phone_num_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/phone_num_txt"
+        android:layout_below="@id/conversion_ratio"
+        android:layout_alignLeft="@id/payment_user"
+        style="@style/payment_item"
+        android:layout_marginTop="@dimen/payment_margin_one"
+        android:paddingBottom="@dimen/payment_item_text_padding"
+        android:paddingTop="@dimen/payment_item_text_padding"
+        />
+    <EditText
+        android:id="@+id/phone_num"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/telecom_hint_txt"
+        android:inputType="phone"
+        android:layout_alignBaseline="@id/phone_num_tip"
+        android:layout_toRightOf="@id/phone_num_tip"
+        style="@style/payment_edit_text"
+        android:maxLength="11"
+        />
+</RelativeLayout>

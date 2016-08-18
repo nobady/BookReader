@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/reader_bottom_bg"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:gravity="center_vertical">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reader_menu_row_height"
+        android:baselineAligned="false"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="1px"
+            android:id="@+id/reader_paging">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paging"
+                android:layout_gravity="center"
+                android:drawablePadding="15dp"
+                android:drawableLeft="@drawable/reader_paging"
+                android:gravity="center"
+                android:textColor="@color/reader_menu_title_color"
+                />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/reader_menu_divider_color"/>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/scrolling">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/scrolling"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/reader_scrolling"
+                android:gravity="center"
+                android:drawablePadding="15dp"
+                android:textColor="@color/reader_menu_title_color"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/reader_menu_divider_color"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reader_menu_row_height"
+        android:baselineAligned="false">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="1px"
+            android:id="@+id/horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/horizontal"
+                android:layout_gravity="center"
+                android:drawablePadding="15dp"
+                android:drawableLeft="@drawable/reader_horizontal"
+                android:gravity="center"
+                android:textColor="@color/reader_menu_title_color"/>
+        </FrameLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/reader_menu_divider_color"/>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/vertical"
+                android:layout_gravity="center"
+                android:drawableLeft="@drawable/reader_vertical"
+                android:gravity="center"
+                android:drawablePadding="15dp"
+                android:textColor="@color/reader_menu_title_color"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/reader_menu_divider_color"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/reader_menu_row_height"
+        android:baselineAligned="false">
+
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/volume_turn"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:textColor="@color/reader_menu_title_color"
+                android:text="@string/volume_turn"
+                android:gravity="center" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/volume_turn_checkBox"
+                android:layout_gravity="right|center_vertical"
+                android:checked="false"
+                android:clickable="false"
+                android:focusable="false"
+                android:minWidth="45dp"
+                android:button="@drawable/check_box_bk_night"/>
+
+        </FrameLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/reader_menu_divider_color"/>
+
+        <FrameLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/background_light"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="left|center_vertical"
+                android:textColor="@color/reader_menu_title_color"
+                android:text="@string/background_light"
+                android:gravity="center" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/background_light_checkBox"
+                android:layout_gravity="right|center_vertical"
+                android:checked="false"
+                android:clickable="false"
+                android:focusable="false"
+                android:minWidth="45dp"
+                android:button="@drawable/check_box_bk_night"/>
+
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

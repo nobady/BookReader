@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp"
+    android:paddingLeft="10dp"
+    android:background="@color/classification_head_background"
+    android:paddingRight="10dp"
+    android:layout_marginBottom="24dp"
+    >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="4dp"
+        >
+        <ImageView
+            android:id="@+id/img_ancient"
+            android:layout_width="@dimen/category_city_width"
+            android:layout_height="@dimen/category_city_height"
+            android:src="@drawable/category_ancient"
+            android:scaleType="fitXY"
+            android:layout_marginRight="@dimen/category_city_padding"
+            />
+        <ImageView
+            android:id="@+id/img_fantasy"
+            android:layout_width="@dimen/category_city_width"
+            android:layout_height="@dimen/category_city_height"
+            android:src="@drawable/category_fantasy"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="@dimen/category_city_padding"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="4dp"
+        >
+        <ImageView
+            android:id="@+id/img_city"
+            android:layout_width="@dimen/category_city_width"
+            android:layout_height="@dimen/category_city_height"
+            android:src="@drawable/category_city"
+            android:scaleType="fitXY"
+            android:layout_marginRight="@dimen/category_city_padding"
+            />
+        <ImageView
+            android:id="@+id/img_across"
+            android:layout_width="@dimen/category_city_width"
+            android:layout_height="@dimen/category_city_height"
+            android:src="@drawable/category_across"
+            android:scaleType="fitXY"
+            android:layout_marginLeft="@dimen/category_city_padding"
+            />
+    </LinearLayout>
+
+</LinearLayout>

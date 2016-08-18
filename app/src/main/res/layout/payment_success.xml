@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/user_center_bg"
+    >
+
+    <include
+        layout="@layout/topbar"
+        android:id="@+id/payment_success_top_bar"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/record_tittle_bg"
+        >
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:src="@drawable/record_avatar"/>
+
+        <TextView
+            android:id="@+id/user_name"
+            android:textColor="@color/record_user_name_color"
+            android:textSize="18sp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/record_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/record_title_color"
+            android:textSize="18sp"
+            android:text="@string/payment_success_tip"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/success_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_delay"
+        android:layout_marginLeft="@dimen/payment_margin_one"
+        android:layout_marginRight="@dimen/payment_margin_one"
+        android:layout_marginTop="@dimen/pay_success_margin_top"
+        android:textSize="17sp"
+        android:textColor="@color/login_text_color"
+
+        />
+
+    <TextView
+        android:id="@+id/pay_success_tip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/payment_delay"
+        android:layout_marginLeft="@dimen/payment_margin_one"
+        android:layout_marginRight="@dimen/payment_margin_one"
+        android:layout_marginTop="6dp"
+        android:lineSpacingExtra="6dp"
+        android:textSize="17sp"
+        android:textColor="@color/login_text_color"
+
+        />
+
+    <TextView
+        android:id="@+id/btn_check_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/payment_next_height"
+        android:text="@string/check_account"
+        android:background="@drawable/next_bg"
+        android:layout_marginLeft="@dimen/payment_margin_one"
+        android:layout_marginRight="@dimen/payment_margin_one"
+        android:layout_marginTop="@dimen/pay_success_margin_top"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:textSize="@dimen/payment_next_size"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/helper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/user_helper_content"
+        android:gravity="bottom"
+        android:layout_marginLeft="@dimen/payment_margin_one"
+        android:layout_marginRight="@dimen/payment_margin_one"
+        android:layout_marginTop="@dimen/pay_success_margin_top"
+        android:layout_marginBottom="@dimen/pay_success_margin_top"
+        android:lineSpacingExtra="6dp"
+        android:textSize="17sp"
+        android:textColor="@color/login_text_color"
+        />
+</LinearLayout>

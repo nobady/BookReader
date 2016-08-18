@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".ConversationActivity"
+    android:background="@color/user_center_bg">
+
+    <RelativeLayout
+        android:id="@+id/umeng_fb_contact_header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/tab_bg_height"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/topbar_bg">
+
+        <ImageView
+            android:id="@+id/umeng_fb_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:src="@drawable/topbar_btn_return_img"
+            android:background="@drawable/topbar_btn_return_bg"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/umeng_fb_contact_title"
+            android:textColor="@color/top_title_text_color"
+            android:textSize="@dimen/tab_text_size"/>
+
+        <ImageView
+            android:id="@+id/umeng_fb_save"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="20dp"
+            android:textColor="@color/white"
+            android:src="@drawable/umeng_fb_tick_selector"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/edit_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/umeng_fb_contact_header"
+        android:background="@color/white"
+        >
+
+        <EditText
+            android:id="@+id/umeng_fb_contact_info"
+            android:layout_width="fill_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_edit_text"
+            android:hint="@string/umeng_fb_contact_info_hint"
+            android:gravity="left|top"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:textColor="@color/info_detail"
+            android:textSize="@dimen/autocomplete_text_size"/>
+
+        <TextView
+            android:id="@+id/umeng_fb_contact_update_at"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/umeng_fb_contact_info"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/umeng_fb_contact_update_at"
+            android:textColor="@color/payment_user_name_color"
+            android:textSize="8sp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>

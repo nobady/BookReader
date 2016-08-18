@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/user_center_bg"
+    >
+
+    <include
+        android:id="@+id/volume_top_bar"
+        layout="@layout/topbar"
+        />
+
+    <ListView
+        android:id="@+id/book_volumes"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:scrollbars="vertical"
+        android:divider="@color/transparent"
+        android:cacheColorHint="@color/transparent"
+        android:listSelector="@color/transparent"
+        android:layout_marginTop="5dp"
+        />
+    <TextView
+        android:id="@+id/empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/null_err_code"
+        android:textSize="15sp"
+        android:text="@string/no_data"
+        android:visibility="gone"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        />
+
+</LinearLayout>

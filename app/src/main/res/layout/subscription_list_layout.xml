@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:orientation="horizontal"
+        android:background="@drawable/tips_bg"
+        >
+
+        <TextView
+            android:id="@+id/count_of_select"
+            android:layout_width="0dp"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:textColor="@color/my_consumption"
+            android:textSize="18sp"
+            />
+
+        <TextView
+            android:id="@+id/consumption"
+            android:layout_width="0dp"
+            android:layout_weight="3"
+            android:layout_height="wrap_content"
+            android:textColor="@color/my_consumption"
+            android:textSize="18sp"
+            android:gravity="left"
+            />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="310dp"
+        >
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            style="@style/progress_bar"
+            />
+
+        <ListView
+            android:id="@+id/vip_chapters_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="multipleChoice"
+            android:cacheColorHint="@color/transparent"
+            android:divider="@null"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/empty_view_text_color"
+            android:textSize="18sp"
+            android:text="@string/no_wifi"
+            android:id="@+id/empty_view"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="50dp"
+            android:gravity="center"
+            android:visibility="gone"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/recharge_bg"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        >
+        <Button
+            android:id="@+id/ok_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="8dp"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:background="@drawable/button_bg"
+            android:layout_gravity="center"
+            android:text="@string/ok"
+            />
+    </FrameLayout>
+
+</LinearLayout>
