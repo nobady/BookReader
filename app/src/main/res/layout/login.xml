@@ -7,14 +7,13 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:background="@drawable/top_content_bg"
+        android:background="@color/pick"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/login_back"
             android:paddingBottom="@dimen/login_pannel_padding_bottom"
             >
 
@@ -40,6 +39,7 @@
                 android:id="@+id/et_name"
                 android:singleLine="true"
                 android:textSize="@dimen/login_title_text_size"
+                android:hint="@string/qw_account_hint"
                 android:textColorHint="@color/white_text_color"
                 android:layout_below="@id/avater"
                 android:layout_gravity="center"/>
@@ -65,6 +65,7 @@
                 android:singleLine="true"
                 android:imeOptions="actionGo"
                 android:paddingLeft="90dp"
+                android:hint="@string/qw_password_hint"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
                 android:layout_marginTop="@dimen/login_edit_margin_top"
@@ -102,7 +103,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/register_text"
+                android:text="@string/check_update"
                 android:id="@+id/tv_register"
                 android:textSize="@dimen/login_register_text_size"
                 android:layout_marginTop="@dimen/login_register_margin_top"
@@ -112,6 +113,7 @@
 
             <Button
                 android:text="@string/login_text"
+                android:textColor="@color/pink_text_color"
                 android:id="@+id/button_login"
                 android:layout_marginTop="@dimen/login_button_margin_top"
                 android:layout_below="@+id/tv_forget"
@@ -119,36 +121,6 @@
                 />
         </RelativeLayout>
     </LinearLayout>
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <TextView android:id="@+id/tv_setting_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/setting_title_back"
-            android:drawableLeft="@drawable/setting_left"
-            android:textSize="@dimen/login_setting_text_size"
-            android:paddingTop="5dp"
-            android:paddingBottom="5dp"
-            android:paddingLeft="10dp"
-            android:textColor="@color/login_text_color"
-            android:text="@string/setting"/>
-        <View android:layout_width="match_parent"
-            android:layout_height="3px"
-            android:background="@drawable/diver_line"
-            android:layout_toRightOf="@id/tv_setting_title"
-            android:layout_alignBottom="@id/tv_setting_title"/>
-        <ListView
-            android:id="@+id/lv_setting"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/tv_setting_title"
-            android:cacheColorHint="@color/transparent"
-            android:alwaysDrawnWithCache="false"
-            android:divider="@drawable/diver_line">
 
-        </ListView>
-
-    </RelativeLayout>
 
 </LinearLayout>

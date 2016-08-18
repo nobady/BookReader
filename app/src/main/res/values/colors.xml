@@ -2,6 +2,8 @@
 <resources>
     <color name="white">#ffffffff</color>
     <color name="pick">#ff85a7</color>
+    <color name="red">#ffcc0000</color>
+    <color name="login_bg_color">#fec3d9</color>
     <color name="home_background">#ffefefef</color>
     <color name="search_background">#ffffeced</color>
     <color name="pink">#fffa7c7c</color>
@@ -160,4 +162,6 @@
     <color name="classification_head_background">#fff2f2f2</color>
     <color name="ranklist_color">#ff333333</color>
     <color name="authorization_text">#ffe85c8a</color>
+
+
 </resources>

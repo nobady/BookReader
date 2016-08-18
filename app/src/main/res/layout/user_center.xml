@@ -7,7 +7,7 @@
 
     <RelativeLayout
         android:orientation="vertical"
-        android:background="@drawable/top_content_bg"
+        android:background="@color/pick"
         android:paddingBottom="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">

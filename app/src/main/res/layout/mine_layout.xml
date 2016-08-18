@@ -18,18 +18,20 @@
             android:layout_weight="1" >
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/tab_text_height"
+                android:layout_height="@dimen/tab_height"
                 android:gravity="center"
                 android:text="@string/my_shelf"
                 android:id="@+id/shelf_title"
                 android:layout_gravity="top"
-                style="@style/recommend_tab_style"
+                android:textSize="@dimen/tab_text_size"
+                android:textColor="@drawable/recommend_tab_color"
+                android:background="@drawable/tab_mine_text_seclect"
                 />
-            <View android:id="@+id/shelf_title_bottom"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_gravity="bottom"
-                android:background="@drawable/repeat_top_line" />
+            <!--<View android:id="@+id/shelf_title_bottom"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:background="@drawable/repeat_top_line" />-->
         </FrameLayout>
         <FrameLayout
             android:layout_width="match_parent"
@@ -37,18 +39,20 @@
             android:layout_weight="1" >
             <TextView
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/tab_text_height"
+                android:layout_height="@dimen/tab_height"
                 android:gravity="center"
                 android:text="@string/user_center"
                 android:id="@+id/usercenter_title"
                 android:layout_gravity="top"
-                style="@style/recommend_tab_style"
+                android:textSize="@dimen/tab_text_size"
+                android:textColor="@drawable/recommend_tab_color"
+                android:background="@drawable/tab_mine_text_seclect"
                 />
-            <View android:id="@+id/usercenter_title_bottom"
-                android:layout_width="match_parent"
-                android:layout_height="1dp"
-                android:layout_gravity="bottom"
-                android:background="@drawable/top_shadow" />
+            <!--<View android:id="@+id/usercenter_title_bottom"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:layout_gravity="bottom"-->
+                <!--android:background="@drawable/top_shadow" />-->
         </FrameLayout>
 
 

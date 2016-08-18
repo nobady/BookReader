@@ -73,8 +73,8 @@ public class MineFragment extends BaseFragment implements ViewPager.OnPageChange
             mTextViewArray[USER_CENTER].setOnClickListener(this);
             mTextViewArray[BOOK_SHELF] = (TextView) mFragmentView.findViewById(R.id.shelf_title);
             mTextViewArray[BOOK_SHELF].setOnClickListener(this);
-            mTitltBottomViewArray[USER_CENTER] = mFragmentView.findViewById(R.id.usercenter_title_bottom);
-            mTitltBottomViewArray[BOOK_SHELF] = mFragmentView.findViewById(R.id.shelf_title_bottom);
+//            mTitltBottomViewArray[USER_CENTER] = mFragmentView.findViewById(R.id.usercenter_title_bottom);
+//            mTitltBottomViewArray[BOOK_SHELF] = mFragmentView.findViewById(R.id.shelf_title_bottom);
             mViewPager = (ViewPager) mFragmentView.findViewById(R.id.mine_viewpager);
             mFragmentList.add(BookShelfFragment.newFragment());
             mUserCenterFragment = UserCenterFragment.newFragment();
@@ -124,14 +124,14 @@ public class MineFragment extends BaseFragment implements ViewPager.OnPageChange
             case BOOK_SHELF:
                 mTextViewArray[BOOK_SHELF].setSelected(true);
                 mTextViewArray[USER_CENTER].setSelected(false);
-                mTitltBottomViewArray[BOOK_SHELF].setBackgroundDrawable(getRepeatLine());
-                mTitltBottomViewArray[USER_CENTER].setBackgroundResource(R.drawable.top_shadow);
+//                mTitltBottomViewArray[BOOK_SHELF].setBackgroundDrawable(getRepeatLine());
+//                mTitltBottomViewArray[USER_CENTER].setBackgroundResource(R.drawable.top_shadow);
                 break;
             case USER_CENTER:
                 mTextViewArray[USER_CENTER].setSelected(true);
                 mTextViewArray[BOOK_SHELF].setSelected(false);
-                mTitltBottomViewArray[USER_CENTER].setBackgroundDrawable(getRepeatLine());
-                mTitltBottomViewArray[BOOK_SHELF].setBackgroundResource(R.drawable.top_shadow);
+//                mTitltBottomViewArray[USER_CENTER].setBackgroundDrawable(getRepeatLine());
+//                mTitltBottomViewArray[BOOK_SHELF].setBackgroundResource(R.drawable.top_shadow);
                 break;
         }
     }

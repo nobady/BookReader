@@ -64,7 +64,7 @@ public class UserCenterFragment extends BaseFragment implements View.OnClickList
             mModifyPasswordTextView;
     private WebImageView mAvatarImageView;
     private UserInfo mUserInfo;
-    private ListView mListView;
+//    private ListView mListView;
     private GridView mGridView;
     private LoadingProgressDialog mLoadingDialog;
     private View mView;
@@ -104,10 +104,10 @@ public class UserCenterFragment extends BaseFragment implements View.OnClickList
     }
 
     private void resetUi() {
-        if (mUserManager.isLogin()) {
+        if (mUserManager.isLogin()) {   //如果已经登录，就显示个人信息页面
             startUserCenter();
         } else {
-            startLogin();
+            startLogin();  //如果 未登录，显示登录页面
         }
     }
 
@@ -147,16 +147,16 @@ public class UserCenterFragment extends BaseFragment implements View.OnClickList
         mLoginUserName = (EditText) mView.findViewById(R.id.et_name);
         mLoginPassword = (EditText) mView.findViewById(R.id.et_password);
         mLoginSubmit.setOnClickListener(this);
-        mListView = (ListView) mView.findViewById(R.id.lv_setting);
-        SettingListAdapter settingAdapter = new SettingListAdapter(mContext, false);
-        View.OnClickListener openFeedbackListener = new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openFeedbackActivity(mContext);
-            }
-        };
-        settingAdapter.setOpenFeedbackFragmentListener(openFeedbackListener);
-        mListView.setAdapter(settingAdapter);
+//        mListView = (ListView) mView.findViewById(R.id.lv_setting);
+//        SettingListAdapter settingAdapter = new SettingListAdapter(mContext, false);
+//        View.OnClickListener openFeedbackListener = new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openFeedbackActivity(mContext);
+//            }
+//        };
+//        settingAdapter.setOpenFeedbackFragmentListener(openFeedbackListener);
+//        mListView.setAdapter(settingAdapter);
 
         mRegisterTextView = (TextView) mView.findViewById(R.id.tv_register);
         mRegisterTextView.setOnClickListener(this);
