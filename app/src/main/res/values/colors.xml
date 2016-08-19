@@ -64,7 +64,7 @@
     <color name="translucent">#90000000</color>
     <color name="splash_bg">#fffffbf0</color>
     <color name="register_hint">#FFCBBEC0</color>
-    <color name="login_text_color">#FF333333</color>
+    <color name="login_text_color">#FF666666</color>
     <color name="user_center_bg">#FFF7FBFF</color>
     <color name="payment_line">#ffc78490</color>
     <color name="payment_selected">#ff778400</color>

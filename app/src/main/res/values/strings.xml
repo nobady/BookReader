@@ -331,4 +331,7 @@
     <string name="non_authorization">蔷薇首发</string>
     <string name="wechat_txt">微信充值</string>
     <string name="check_update">检查更新</string>
+    <string name="loing_use_three">用第三方帐号登录蔷薇帐号</string>
+    <string name="phone_fast_register">手机号快速注册</string>
+    <string name="youxiang_fast_register">邮箱快速注册</string>
 </resources>

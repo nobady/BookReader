@@ -33,6 +33,8 @@ import com.sanqiwan.reader.util.AsyncTaskUtil;
 import com.sanqiwan.reader.view.CmccConfirmDialog;
 import com.sanqiwan.reader.view.LoadingProgressDialog;
 
+import static org.geometerplus.fbreader.formats.html.HtmlTag.P;
+
 /**
  * Created with IntelliJ IDEA.
  * User: IBM     充值页面
@@ -160,7 +162,6 @@ public class PaymentFragment extends BaseFragment implements View.OnClickListene
                 responseInfo.setIsSuccess(false);
                 alipay(responseInfo.getOrderInfo());   //真正的支付
             }
-
             if (responseInfo.isSuccess()) {
                 openPaymentSuccessFragment(responseInfo);   //打开支付成功的页面
             }
