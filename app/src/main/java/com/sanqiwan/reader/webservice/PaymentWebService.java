@@ -35,6 +35,15 @@ public class PaymentWebService {
         mPaymentJsonBuilder = new PaymentJsonBuilder();
     }
 
+    /**
+     * 微信支付
+     * @param userId
+     * @param payMoney
+     */
+    public void wechatPayment(int userId, int payMoney){
+
+    }
+
     public PaymentResponseInfo alipayPayment(int userId, int payMoney) throws ZLNetworkException {
         mUri = mUriBuilder.builderUriForGetAliWapPayOrder();
         //将id和金额封装为json

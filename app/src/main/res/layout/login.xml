@@ -159,7 +159,7 @@
 
 
     <LinearLayout
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -167,6 +167,7 @@
         >
 
         <ImageView
+            android:id="@+id/qq_login_iv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/qq_login"
@@ -174,6 +175,7 @@
             />
 
         <ImageView
+            android:id="@+id/wechat_login_iv"
             android:layout_marginLeft="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -182,6 +184,7 @@
             />
 
         <ImageView
+            android:id="@+id/weibo_login_iv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/weibo_login"
@@ -213,6 +216,7 @@
             android:background="@color/pink_text_color"
             />
         <TextView
+            android:id="@+id/mail_register_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/youxiang_fast_register"

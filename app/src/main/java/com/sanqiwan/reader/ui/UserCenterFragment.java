@@ -21,6 +21,7 @@ import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.RelativeLayout;
@@ -72,6 +73,11 @@ public class UserCenterFragment extends BaseFragment implements View.OnClickList
     private LinearLayout mContainer;
     private LayoutInflater mInflater;
     private int mActionCode;
+    private ImageView qqLoginIv;
+    private ImageView wechatLoginIv;
+    private ImageView weiboLoginIv;
+    private TextView phoneRegTv;
+    private TextView mailRegTv;
 
     public static UserCenterFragment newFragment() {
         return new UserCenterFragment();
@@ -129,6 +135,19 @@ public class UserCenterFragment extends BaseFragment implements View.OnClickList
             case R.id.tv_modify_password:
                 startModifyPassword();
                 break;
+            /*第三方登录相关*/
+            case R.id.qq_login_iv:
+                break;
+            case R.id.wechat_login_iv:
+                break;
+            case R.id.weibo_login_iv:
+                break;
+            /*手机和邮箱注册相关*/
+            case R.id.phone_register_tv:
+                break;
+            case R.id.mail_register_tv:
+                break;
+
         }
     }
 
@@ -147,16 +166,19 @@ public class UserCenterFragment extends BaseFragment implements View.OnClickList
         mLoginUserName = (EditText) mView.findViewById(R.id.et_name);
         mLoginPassword = (EditText) mView.findViewById(R.id.et_password);
         mLoginSubmit.setOnClickListener(this);
-//        mListView = (ListView) mView.findViewById(R.id.lv_setting);
-//        SettingListAdapter settingAdapter = new SettingListAdapter(mContext, false);
-//        View.OnClickListener openFeedbackListener = new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                openFeedbackActivity(mContext);
-//            }
-//        };
-//        settingAdapter.setOpenFeedbackFragmentListener(openFeedbackListener);
-//        mListView.setAdapter(settingAdapter);
+
+        //第三方登录相关
+        qqLoginIv = (ImageView) mView.findViewById(R.id.qq_login_iv);
+        wechatLoginIv = (ImageView) mView.findViewById(R.id.wechat_login_iv);
+        weiboLoginIv = (ImageView) mView.findViewById(R.id.weibo_login_iv);
+        qqLoginIv.setOnClickListener(this);
+        wechatLoginIv.setOnClickListener(this);
+        weiboLoginIv.setOnClickListener(this);
+        //手机邮箱注册相关
+        phoneRegTv = (TextView) mView.findViewById(R.id.phone_register_tv);
+        mailRegTv = (TextView) mView.findViewById(R.id.mail_register_tv);
+        phoneRegTv.setOnClickListener(this);
+        mailRegTv.setOnClickListener(this);
 
         mRegisterTextView = (TextView) mView.findViewById(R.id.tv_register);
         mRegisterTextView.setOnClickListener(this);
