@@ -11,9 +11,12 @@ import com.sanqiwan.reader.R;
 import com.tencent.mm.sdk.constants.ConstantsAPI;
 import com.tencent.mm.sdk.modelbase.BaseReq;
 import com.tencent.mm.sdk.modelbase.BaseResp;
+import com.tencent.mm.sdk.modelmsg.SendAuth;
 import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.tencent.mm.sdk.openapi.IWXAPIEventHandler;
 import com.tencent.mm.sdk.openapi.WXAPIFactory;
+
+import static org.geometerplus.fbreader.formats.html.HtmlTag.P;
 
 
 public class WXPayEntryActivity extends Activity implements IWXAPIEventHandler {
@@ -52,6 +55,12 @@ public class WXPayEntryActivity extends Activity implements IWXAPIEventHandler {
             builder.setTitle("提示");
             builder.setMessage("微信支付结果" + ";code=" + String.valueOf(resp.errCode));
             builder.show();
+        }
+        //登录回调
+        if(resp instanceof SendAuth.Resp){
+            SendAuth.Resp resp1 = (SendAuth.Resp) resp;
+            //获取微信返回的code
+            String code = resp1.code;
         }
     }
 }

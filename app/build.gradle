@@ -50,5 +50,4 @@ dependencies {
     compile files('libs/httpcore-4.2.4.jar')
     compile files('libs/httpmime-4.2.5.jar')
     compile files('libs/libammsdk.jar')
-    compile project(':rx_mvp_libs')
 }

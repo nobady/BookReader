@@ -34,6 +34,8 @@ import com.sanqiwan.reader.apps.AppListActivity;
 import com.sanqiwan.reader.engine.UserManager;
 import com.sanqiwan.reader.model.AccountResult;
 import com.sanqiwan.reader.model.UserInfo;
+import com.sanqiwan.reader.threelogin.ThreeLogin;
+import com.sanqiwan.reader.threelogin.WXLogin;
 import com.sanqiwan.reader.util.AsyncTaskUtil;
 import com.sanqiwan.reader.util.UIUtil;
 import com.sanqiwan.reader.view.LoadingProgressDialog;
@@ -139,6 +141,8 @@ public class UserCenterFragment extends BaseFragment implements View.OnClickList
             case R.id.qq_login_iv:
                 break;
             case R.id.wechat_login_iv:
+                ThreeLogin threeLogin = new WXLogin();
+                threeLogin.startLogin(mContext);
                 break;
             case R.id.weibo_login_iv:
                 break;
