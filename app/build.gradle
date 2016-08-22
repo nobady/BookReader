@@ -1,13 +1,20 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 22
-    buildToolsVersion "22.0.1"
-
+    signingConfigs {
+        config {
+            keyAlias 'qwsy'
+            keyPassword 'qwsy123'
+            storeFile file('D:/觅哥/qwsy.jks')
+            storePassword 'qwsy123'
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
     defaultConfig {
         applicationId "com.sanqiwan.reader"
-        minSdkVersion 9
-        targetSdkVersion 22
+        minSdkVersion 14
+        targetSdkVersion 23
 
         ndk {
             moduleName "DeflatingDecompressor-v3"
@@ -16,17 +23,20 @@ android {
         testApplicationId "com.sanqiwan.reader.tests"
         testInstrumentationRunner "android.test.InstrumentationTestRunner"
     }
-
     buildTypes {
         release {
             minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-project.txt'
+            signingConfig signingConfigs.config
+        }
+        debug {
+            signingConfig signingConfigs.config
         }
     }
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:22.0.0'
+    compile 'com.android.support:appcompat-v7:23.0.1'
     compile files('libs/alipay_msp.jar')
     compile files('libs/alipaysdk.jar')
     compile files('libs/alipaysecsdk.jar')
@@ -39,4 +49,6 @@ dependencies {
     compile files('libs/httpclient-cache-4.2.5.jar')
     compile files('libs/httpcore-4.2.4.jar')
     compile files('libs/httpmime-4.2.5.jar')
+    compile files('libs/libammsdk.jar')
+    compile project(':rx_mvp_libs')
 }

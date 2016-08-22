@@ -6,6 +6,7 @@ import com.sanqiwan.reader.model.SMSPaymentInfo;
 import com.sanqiwan.reader.payment.NullPostDataException;
 import com.sanqiwan.reader.payment.NullResponseDataException;
 import com.sanqiwan.reader.webservice.parser.ResponseDataParser;
+
 import org.geometerplus.zlibrary.core.network.ZLNetworkException;
 import org.geometerplus.zlibrary.core.network.ZLNetworkManager;
 import org.geometerplus.zlibrary.core.network.ZLNetworkRequest;
@@ -41,7 +42,7 @@ public class PaymentWebService {
      * @param payMoney
      */
     public void wechatPayment(int userId, int payMoney){
-
+        mUri = mUriBuilder.builderUriForGetWXPayOrder ();
     }
 
     public PaymentResponseInfo alipayPayment(int userId, int payMoney) throws ZLNetworkException {

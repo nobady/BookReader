@@ -1,7 +1,7 @@
 package com.sanqiwan.reader.webservice;
 
 import android.net.Uri;
-import com.sanqiwan.reader.model.CommentInfo;
+
 import com.sanqiwan.reader.util.SecurityUtil;
 
 import java.text.DateFormat;
@@ -30,6 +30,7 @@ public class UriBuilder {
     private static final String ACTION_GET_BACK_PASSWORD = "GetBackPassword";
     private static final String ACTION_USER_ALIPAY_PAYMENT = "UserAliPayPayment";
     private static final String ACTION_USER_ALIPAY_WAP_PAYMENT = "UserAliPayWapPayment";
+    private static final String ACTION_USER_WXPAY_PAYMENT = "UserWXPayPayment";
     private static final String ACTION_USER_SMS_PAYMENT = "UserSMSPayment";
     private static final String ACTION_USER_PREPAID_CARD = "UserPrepaidCardPayment";
     private static final String ACTION_GET_VIP_CHAPTER_ORDER = "GetVIPChapterOrder";
@@ -238,6 +239,12 @@ public class UriBuilder {
     public String builderUriForGetAliWapPayOrder() {
         Uri.Builder builder = getBaseBuilder();
         builder.appendQueryParameter(KEY_ACTION, ACTION_USER_ALIPAY_WAP_PAYMENT);
+        return builder.toString();
+    }
+    /*微信订单url*/
+    public String builderUriForGetWXPayOrder() {
+        Uri.Builder builder = getBaseBuilder();
+        builder.appendQueryParameter(KEY_ACTION, ACTION_USER_WXPAY_PAYMENT);
         return builder.toString();
     }
 
