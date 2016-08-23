@@ -222,6 +222,7 @@ public class UserCenterFragment extends BaseFragment implements View.OnClickList
         mContainer.addView (mView);
     }
 
+
     private void startPhoneRegister () {
         MainActivity.openSubFragment (UserRegisterFragment.newFragment (mActionCode));
     }

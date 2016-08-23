@@ -1,5 +1,6 @@
 package com.sanqiwan.reader.ui;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -159,5 +160,10 @@ public class MineFragment extends BaseFragment implements ViewPager.OnPageChange
 
     private void showUserCenter() {
         mViewPager.setCurrentItem(USER_CENTER);
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        mUserCenterFragment.onActivityResult(requestCode,resultCode,data);
     }
 }

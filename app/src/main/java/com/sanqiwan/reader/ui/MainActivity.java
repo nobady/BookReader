@@ -439,4 +439,10 @@ public class MainActivity extends BaseFragmentActivity implements View.OnClickLi
         intent.putExtra(CURRENT_FRAGMENT, PAYMENT_FRAGMENT);
         context.startActivity(intent);
     }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        mMineFragment.onActivityResult(requestCode,resultCode,data);
+    }
 }
