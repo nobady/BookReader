@@ -19,12 +19,14 @@
 
 package org.geometerplus.android.fbreader.network;
 
+import android.annotation.TargetApi;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.app.Service;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Message;
@@ -200,6 +202,7 @@ public class BookDownloaderService extends Service {
         return intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
     }
 
+    @TargetApi (Build.VERSION_CODES.JELLY_BEAN)
     private Notification createDownloadFinishNotification(File file, String title, boolean success) {
         final ZLResource resource = getResource();
         final String tickerText = success ?
@@ -208,15 +211,25 @@ public class BookDownloaderService extends Service {
         final String contentText = success ?
                 resource.getResource("contentSuccess").getValue() :
                 resource.getResource("contentError").getValue();
-        final Notification notification = new Notification(
-                android.R.drawable.stat_sys_download_done,
-                tickerText,
-                System.currentTimeMillis()
-        );
-        notification.flags |= Notification.FLAG_AUTO_CANCEL;
+//        final Notification notification = new Notification(
+//                android.R.drawable.stat_sys_download_done,
+//                tickerText,
+//                System.currentTimeMillis()
+//        );
+//        notification.flags |= Notification.FLAG_AUTO_CANCEL;
         final Intent intent = success ? getFBReaderIntent(file) : new Intent();
         final PendingIntent contentIntent = PendingIntent.getActivity(this, 0, intent, 0);
-        notification.setLatestEventInfo(getApplicationContext(), title, contentText, contentIntent);
+//        notification.setLatestEventInfo(getApplicationContext(), title, contentText, contentIntent);
+
+        Notification.Builder builder = new Notification.Builder(this);
+        builder.setContentTitle (title);
+        builder.setContentText(contentText);
+        builder.setSmallIcon(android.R.drawable.stat_sys_download_done);
+                builder.setTicker(tickerText);
+        builder.setAutoCancel(true);
+        builder.setWhen(System.currentTimeMillis());
+        builder.setContentIntent( contentIntent);
+        Notification notification = builder.build();
         return notification;
     }
 

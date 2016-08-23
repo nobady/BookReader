@@ -11,6 +11,8 @@ import android.view.KeyEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
+
+import com.sanqiwan.reader.R;
 import com.sanqiwan.reader.data.HistoryManager;
 import com.sanqiwan.reader.data.XBookManager;
 import com.sanqiwan.reader.receiver.WakeUpHelper;

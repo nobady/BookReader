@@ -73,7 +73,7 @@ public class NotificationHelper {
         mNotifyBuilder.setContentIntent(PendingIntent.getActivity(mContext, 0, intent, 0));
         mNotifyBuilder.setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION));
         Notification notification = mNotifyBuilder.build();
-        notification.flags |= Notification.FLAG_NO_CLEAR;// 不能够自动清除
+        notification.flags |= Notification.FLAG_AUTO_CANCEL;
         mNotifyManager.notify(notifyId, notification);
     }
 }

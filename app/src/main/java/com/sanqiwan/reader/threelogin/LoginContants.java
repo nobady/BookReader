@@ -6,4 +6,5 @@ package com.sanqiwan.reader.threelogin;
 
 public class LoginContants {
     public static final String WX_LOGIN_APP_ID = "";
+    public static final String QQ_LOGIN_APP_ID = "100365765";
 }

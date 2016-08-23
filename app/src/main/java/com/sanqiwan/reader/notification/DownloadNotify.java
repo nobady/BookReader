@@ -1,10 +1,13 @@
 package com.sanqiwan.reader.notification;
 
+import android.annotation.TargetApi;
 import android.app.Notification;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
+
 import com.sanqiwan.reader.AppContext;
 import com.sanqiwan.reader.R;
 import com.sanqiwan.reader.ui.ReaderActivity;
@@ -45,30 +48,57 @@ public class DownloadNotify {
         return sDownloadNotify;
     }
 
+    @TargetApi (Build.VERSION_CODES.JELLY_BEAN)
     private void startNotification(long bookId, String bookName, int initProgress) {
+
         mNotifyManager = (NotificationManager) sContext.getSystemService(sContext.NOTIFICATION_SERVICE);
+        Notification.Builder builder = new Notification.Builder(sContext);
         setPendingIntent(bookId);
-        NOTIFY.flags = Notification.FLAG_AUTO_CANCEL;
-        //设置Notification的发送时间
-        NOTIFY.when = System.currentTimeMillis();
+//        builder.setContentInfo("补充内容");
+        builder.setContentText(initProgress + sContext.getResources().getString(R.string.percent));
+        builder.setContentTitle(bookName);
+        builder.setSmallIcon(R.drawable.qw_icon);
+//        builder.setTicker("新消息");
+        builder.setAutoCancel(true);
+        builder.setWhen(System.currentTimeMillis());
+        builder.setContentIntent( mPendingMap.get(bookId));
+        Notification notification = builder.build();
+        mNotifyManager.notify(getNotificationID(bookId), notification);
 
-        NOTIFY.icon = R.drawable.qw_icon;
-        //设置Notification事件信息
-        NOTIFY.setLatestEventInfo(sContext, bookName,
-                initProgress + sContext.getResources().getString(R.string.percent), mPendingMap.get(bookId));
-        //设置Notification的文本内容,会显示在状态栏中
-        NOTIFY.tickerText = bookName;
-        mNotifyManager.notify(getNotificationID(bookId), NOTIFY);
+//
+//        setPendingIntent(bookId);
+//        NOTIFY.flags = Notification.FLAG_AUTO_CANCEL;
+//        //设置Notification的发送时间
+//        NOTIFY.when = System.currentTimeMillis();
+//
+//        NOTIFY.icon = R.drawable.qw_icon;
+//        //设置Notification事件信息
+//        NOTIFY.setLatestEventInfo(sContext, bookName,
+//                initProgress + sContext.getResources().getString(R.string.percent), mPendingMap.get(bookId));
+//        //设置Notification的文本内容,会显示在状态栏中
+//        NOTIFY.tickerText = bookName;
+//        mNotifyManager.notify(getNotificationID(bookId), NOTIFY);
     }
-
+    @TargetApi (Build.VERSION_CODES.JELLY_BEAN)
     public void updateProgress(long bookId, String bookName, int update) {
         if (!mPendingMap.contains(bookId)) {
             startNotification(bookId, bookName, update);
             return;
         }
-        NOTIFY.setLatestEventInfo(sContext, bookName,
-                update + sContext.getResources().getString(R.string.percent).toString(), mPendingMap.get(bookId));
-        mNotifyManager.notify(getNotificationID(bookId), NOTIFY);
+        Notification.Builder builder = new Notification.Builder(sContext);
+        setPendingIntent(bookId);
+        //        builder.setContentInfo("补充内容");
+        builder.setContentText( update + sContext.getResources().getString(R.string.percent).toString());
+        builder.setContentTitle(bookName);
+        builder.setSmallIcon(R.drawable.qw_icon);
+        //        builder.setTicker("新消息");
+        builder.setAutoCancel(true);
+        builder.setWhen(System.currentTimeMillis());
+        builder.setContentIntent( mPendingMap.get(bookId));
+        Notification notification = builder.build();
+//        NOTIFY.setLatestEventInfo(sContext, bookName,
+//                update + sContext.getResources().getString(R.string.percent).toString(), mPendingMap.get(bookId));
+        mNotifyManager.notify(getNotificationID(bookId), notification);
 
     }
 
