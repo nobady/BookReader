@@ -524,5 +524,13 @@
                 <action android:name="com.sanqiwan.reader.wake_up"/>
             </intent-filter>
         </receiver>
+
+        <!--注册微信回调 WXEntryActivity -->
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent" />
     </application>
 </manifest>

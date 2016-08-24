@@ -17,9 +17,9 @@ import com.tencent.mm.sdk.openapi.IWXAPIEventHandler;
 import com.tencent.mm.sdk.openapi.WXAPIFactory;
 
 
-public class WXPayEntryActivity extends Activity implements IWXAPIEventHandler {
+public class WXEntryActivity extends Activity implements IWXAPIEventHandler {
 
-    private static final String TAG = "WXPayEntryActivity";
+    private static final String TAG = "WXEntryActivity";
 
     private IWXAPI api;
 
