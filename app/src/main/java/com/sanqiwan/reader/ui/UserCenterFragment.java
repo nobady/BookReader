@@ -37,6 +37,7 @@ import com.sanqiwan.reader.threelogin.QQLogin;
 import com.sanqiwan.reader.threelogin.ThreeLogin;
 import com.sanqiwan.reader.threelogin.WXLogin;
 import com.sanqiwan.reader.util.AsyncTaskUtil;
+import com.sanqiwan.reader.util.DialogUtil;
 import com.sanqiwan.reader.util.UIUtil;
 import com.sanqiwan.reader.view.LoadingProgressDialog;
 import com.sanqiwan.reader.webimageview.IImageHandler;
@@ -44,6 +45,8 @@ import com.sanqiwan.reader.webimageview.WebImageView;
 import com.tencent.tauth.IUiListener;
 import com.tencent.tauth.Tencent;
 import com.tencent.tauth.UiError;
+
+import org.json.JSONObject;
 
 import java.util.Observable;
 import java.util.Observer;
@@ -82,7 +85,6 @@ public class UserCenterFragment extends BaseFragment implements View.OnClickList
      * 第三方登录
      */
     private ThreeLogin threeLogin;
-    private QQLoginListener qqLoginListener;
 
     public static UserCenterFragment newFragment () {
         return new UserCenterFragment ();
@@ -141,7 +143,6 @@ public class UserCenterFragment extends BaseFragment implements View.OnClickList
                 break;
             /*第三方登录相关*/
             case R.id.qq_login_iv:
-                qqLoginListener = new QQLoginListener ();
                 threeLogin = new QQLogin (qqLoginListener);
                 threeLogin.startLogin (mContext);
                 break;
@@ -160,11 +161,58 @@ public class UserCenterFragment extends BaseFragment implements View.OnClickList
         }
     }
 
-    private class QQLoginListener implements IUiListener {
-
+    private IUiListener qqLoginListener  = new QQLoginListener (){
         @Override
+        public void doComplete (JSONObject jo) {
+            try {
+                int ret = jo.getInt("ret");
+                if (ret == 0) {
+                    String openID = jo.getString("openid");
+                    String accessToken = jo.getString("access_token");
+                    String expires = jo.getString("expires_in");
+                    if(threeLogin instanceof QQLogin){
+                        Tencent tencent = ((QQLogin) threeLogin).getTencent ();
+                        tencent.setOpenId (openID);
+                        tencent.setAccessToken (accessToken,expires);
+                        com.tencent.connect.UserInfo userInfo = new com.tencent.connect.UserInfo (mContext,tencent.getQQToken ());
+                        userInfo.getUserInfo (userInfoListener);
+                    }
+                }
+            } catch (Exception e) {
+            }
+        }
+    };
+
+    private IUiListener userInfoListener = new QQLoginListener (){
+        @Override
+        public void doComplete (JSONObject jo) {
+            try {
+                int ret = jo.getInt("ret");
+                String nickName = jo.getString("nickname");
+                //发送给服务器  openid和nickname
+            } catch (Exception e) {
+                // TODO: handle exception
+            }
+        }
+    };
+
+    private class QQLoginListener implements IUiListener {
+       @Override
         public void onComplete (Object o) {
-            Toast.makeText (mContext,o.toString (),Toast.LENGTH_SHORT).show ();
+            if (null == o) {
+                DialogUtil.showResultDialog(mContext, "返回为空", "获取数据失败");
+                return;
+            }
+            JSONObject jsonResponse = (JSONObject) o;
+            if (null != jsonResponse && jsonResponse.length() == 0) {
+                DialogUtil.showResultDialog(mContext, "返回为空", "获取数据失败");
+                return;
+            }
+            DialogUtil.showResultDialog(mContext, o.toString(), "成功");
+            doComplete((JSONObject)o);
+        }
+
+        public void doComplete (JSONObject o) {
         }
 
         @Override

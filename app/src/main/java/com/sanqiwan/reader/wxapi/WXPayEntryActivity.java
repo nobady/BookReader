@@ -16,8 +16,6 @@ import com.tencent.mm.sdk.openapi.IWXAPI;
 import com.tencent.mm.sdk.openapi.IWXAPIEventHandler;
 import com.tencent.mm.sdk.openapi.WXAPIFactory;
 
-import static org.geometerplus.fbreader.formats.html.HtmlTag.P;
-
 
 public class WXPayEntryActivity extends Activity implements IWXAPIEventHandler {
 
@@ -61,6 +59,7 @@ public class WXPayEntryActivity extends Activity implements IWXAPIEventHandler {
             SendAuth.Resp resp1 = (SendAuth.Resp) resp;
             //获取微信返回的code
             String code = resp1.code;
+            Log.e(TAG, "onPayFinish, Code = " + code);
         }
     }
 }

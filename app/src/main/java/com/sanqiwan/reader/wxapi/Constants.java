@@ -3,7 +3,7 @@ package com.sanqiwan.reader.wxapi;
 public class Constants {
 
     //微信分配的公众账号ID
-    public static final String APP_ID = "wx2abf118a91989177";
+    public static final String APP_ID = "wx3d455a357be48496";
 
     //微信支付分配的商户号
     public static final String MCH_ID = "1308932401";

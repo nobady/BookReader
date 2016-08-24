@@ -31,4 +31,8 @@ public class QQLogin implements ThreeLogin {
             tencent.login ((MainActivity) context,"all",listener);
         }
     }
+
+    public Tencent getTencent () {
+        return tencent;
+    }
 }
