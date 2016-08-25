@@ -60,6 +60,7 @@ public class WXEntryActivity extends Activity implements IWXAPIEventHandler {
             //获取微信返回的code
             String code = resp1.code;
             Log.e(TAG, "onPayFinish, Code = " + code);
+            //在去请求token
         }
     }
 }

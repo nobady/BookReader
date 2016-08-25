@@ -11,6 +11,7 @@ import android.content.Context;
  */
 public class AppContext {
 
+    public static final boolean IS_DEBUG = true;
     private static Context sContext;
 
     public static void init(Context context) {

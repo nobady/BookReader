@@ -105,6 +105,15 @@ public class UserManager extends Observable {
         return result;
     }
 
+    public void setAccountResult(AccountResult result){
+        if (result.getCode() > 0) {
+            mUid = result.getCode();
+            mUserInfo = getUserInfo(true);
+            mUserInfo.setUid(mUid);
+            mSettings.setUserInfo(mUserInfo);
+        }
+    }
+
     /**
      * 注销账户
      */

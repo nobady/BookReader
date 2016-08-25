@@ -5,7 +5,7 @@ android {
         config {
             keyAlias 'qwsy'
             keyPassword 'qwsy123'
-            storeFile file('D:/觅哥/qwsy.jks')
+            storeFile file('qwsy.jks')
             storePassword 'qwsy123'
         }
     }
@@ -52,4 +52,12 @@ dependencies {
     compile files('libs/libammsdk.jar')
     compile files('libs/mta-sdk-1.6.2.jar')
     compile files('libs/open_sdk_r5756.jar')
+    compile 'com.hannesdorfmann.mosby:mvp:2.0.1'
+    compile 'io.reactivex:rxjava:1.1.8'
+    compile 'com.squareup.retrofit2:retrofit:2.1.0'
+    compile 'com.squareup.retrofit2:converter-gson:2.0.2'
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.2'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.1.2'
+    compile 'io.reactivex:rxandroid:1.2.1'
+    compile 'com.squareup.retrofit2:converter-simplexml:2.1.0'
 }
