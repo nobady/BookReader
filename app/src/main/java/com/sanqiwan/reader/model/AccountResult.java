@@ -1,5 +1,9 @@
 package com.sanqiwan.reader.model;
 
+import org.simpleframework.xml.Element;
+import org.simpleframework.xml.ElementList;
+import org.simpleframework.xml.Root;
+
 /**
  * Created with IntelliJ IDEA.
  * User: sam
@@ -7,6 +11,7 @@ package com.sanqiwan.reader.model;
  * Time: 8:17 PM
  * To change this template use File | Settings | File Templates.
  */
+@Root(name = "data",strict = false)
 public class AccountResult {
     private int mCode;
     private String mMessage;

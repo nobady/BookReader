@@ -100,7 +100,10 @@ public class HttpMethod {
             //错误重连
             builder.retryOnConnectionFailure (true);
 
+            builder.addInterceptor(new CommonInterceptor());
             OkHttpClient httpClient = builder.build ();
+
+
             Converter.Factory factory = SimpleXmlConverterFactory.create ();
             if(type==1){
                 factory = GsonConverterFactory.create ();

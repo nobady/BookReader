@@ -62,7 +62,9 @@ public class UserCenterFragment extends BaseMvpFragment<UserCenterView,UserCente
     private TextView phoneRegTv;
     private TextView mailRegTv;
 
-
+    public static UserCenterFragment newFragment () {
+        return new UserCenterFragment();
+    }
 
     @Override
     public View onCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -143,7 +145,8 @@ public class UserCenterFragment extends BaseMvpFragment<UserCenterView,UserCente
 
     @Override
     public void showLoadDialog (boolean isCancelable) {
-
+        mLoadingDialog = new LoadingProgressDialog (mContext);
+        mLoadingDialog.show ();
     }
 
     @Override
@@ -153,7 +156,7 @@ public class UserCenterFragment extends BaseMvpFragment<UserCenterView,UserCente
 
     @Override
     public void hideDialog () {
-
+        mLoadingDialog.dismiss();
     }
 
     @Override
@@ -199,9 +202,14 @@ public class UserCenterFragment extends BaseMvpFragment<UserCenterView,UserCente
 
     @Override
     public void showLoginSuccess () {
+        resetUi();
         if (((MainActivity) getActivity ()).isForLogin ()) {
             getActivity ().setResult (Activity.RESULT_OK);
             ReaderActivity.startActivityFromLogin (mContext);
         }
+    }
+
+    public void setActionCode (int actionCode) {
+        mActionCode = actionCode;
     }
 }

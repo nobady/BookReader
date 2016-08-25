@@ -34,7 +34,8 @@ public class UserCenterPresenter extends BasePresenter<UserCenterView> implement
 
     @Override
     public void onError (Throwable e) {
-
+        getView().hideDialog();
+        getView().showToastMsg("网络错误");
     }
 
     @Override
@@ -44,6 +45,7 @@ public class UserCenterPresenter extends BasePresenter<UserCenterView> implement
 
     @Override
     public void onNext (AccountResult accountResult) {
+        getView().hideDialog();
         userManager.setAccountResult (accountResult);
         getView ().showLoginSuccess();
     }

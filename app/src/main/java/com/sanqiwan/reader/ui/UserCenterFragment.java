@@ -37,7 +37,6 @@ import com.sanqiwan.reader.threelogin.QQLogin;
 import com.sanqiwan.reader.threelogin.ThreeLogin;
 import com.sanqiwan.reader.threelogin.WXLogin;
 import com.sanqiwan.reader.util.AsyncTaskUtil;
-import com.sanqiwan.reader.util.DialogUtil;
 import com.sanqiwan.reader.util.UIUtil;
 import com.sanqiwan.reader.view.LoadingProgressDialog;
 import com.sanqiwan.reader.webimageview.IImageHandler;
@@ -200,15 +199,15 @@ public class UserCenterFragment extends BaseFragment implements View.OnClickList
        @Override
         public void onComplete (Object o) {
             if (null == o) {
-                DialogUtil.showResultDialog(mContext, "返回为空", "获取数据失败");
+//                DialogUtil.showResultDialog(mContext, "返回为空", "获取数据失败");
                 return;
             }
             JSONObject jsonResponse = (JSONObject) o;
             if (null != jsonResponse && jsonResponse.length() == 0) {
-                DialogUtil.showResultDialog(mContext, "返回为空", "获取数据失败");
+//                DialogUtil.showResultDialog(mContext, "返回为空", "获取数据失败");
                 return;
             }
-            DialogUtil.showResultDialog(mContext, o.toString(), "成功");
+//            DialogUtil.showResultDialog(mContext, o.toString(), "成功");
             doComplete((JSONObject)o);
         }
 

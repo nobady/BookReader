@@ -40,7 +40,7 @@ public class MineFragment extends BaseFragment implements ViewPager.OnPageChange
     public static final int USER_CENTER = 1;
     private BitmapDrawable mDrawable;
     private int mCurrentItem = -1;
-    private UserCenterFragment mUserCenterFragment;
+    private com.sanqiwan.reader.usercenter.UserCenterFragment mUserCenterFragment;
     private int mActionCode;
 
     public static MineFragment newFragment() {
@@ -78,7 +78,7 @@ public class MineFragment extends BaseFragment implements ViewPager.OnPageChange
 //            mTitltBottomViewArray[BOOK_SHELF] = mFragmentView.findViewById(R.id.shelf_title_bottom);
             mViewPager = (ViewPager) mFragmentView.findViewById(R.id.mine_viewpager);
             mFragmentList.add(BookShelfFragment.newFragment());
-            mUserCenterFragment = UserCenterFragment.newFragment();
+            mUserCenterFragment = com.sanqiwan.reader.usercenter.UserCenterFragment.newFragment();
             mUserCenterFragment.setActionCode(mActionCode);
             mFragmentList.add(mUserCenterFragment);
             mViewPager.setAdapter(new FragmentAdapter(getChildFragmentManager(), mFragmentList));
